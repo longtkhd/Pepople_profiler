@@ -1,0 +1,23 @@
+@import 'styles/variables';
+
+.notification-setting-item {
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid @blur;
+  }
+
+  .notification-checkbox {
+    float: right;
+
+    @media @display-md {
+      float: left;
+    }
+
+    @media @display-sm {
+      float: left;;
+    }
+  }
+}

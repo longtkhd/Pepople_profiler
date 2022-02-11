@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 14pt;
+        text-align: justify;
+        letter-spacing: normal;
+        -webkit-print-color-adjust: exact !important;
+        font-family: Muli;
+    }
+
+    hr {
+        opacity: 0.5;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        float: left;
+        height: 50px;
+        padding-left: 6%;
+    }
+
+    .title_information {
+        min-width: 350px;
+        opacity: 0.5;
+        color: #616366;
+        height: 15px;
+        font-family: Muli;
+        padding-left: 6%;
+        font-size: 10pt;
+    }
+
+    .data_information {
+        min-width: 350px;
+        color: #32363e;
+        width: 200px;
+        font-family: Muli;
+        padding-left: 6%;
+        font-size: 14pt;
+        margin-bottom: 16pt;
+    }
+
+    .summaries {
+        padding-left: 6%;
+        padding-right: 5%;
+        width: 100%;
+    }
+
+    .summaries__title {
+        font-size: 17pt;
+        font-weight: 800;
+        line-height: 50px;
+        color: #32363e;
+        font-family: Muli;
+        min-width: 595px;
+    }
+
+    .summaries__description {
+        font-size: 12pt;
+        line-height: 20px;
+        font-family: Muli;
+        min-width: 595px;
+    }
+
+    .competency_assessment {
+        border: none;
+        text-align: left;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .competency_assessment__title {
+        font-size: 16pt;
+        font-weight: 800;
+        font-family: Muli;
+        height: 23px;
+        color: #32363e;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .competency_assessment__description {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        color: #32363e;
+        font-size: 12pt;
+    }
+
+    .title {
+        font-size: 17pt;
+        font-weight: bolder;
+        line-height: 50px;
+        color: #32363e;
+        font-family: Muli;
+    }
+
+    .sub_title {
+        font-size: 17pt;
+        line-height: 50px;
+        color: #32363e;
+        font-family: Muli;
+    }
+    .sub_title2 {
+        font-size: 16pt;
+        line-height: 50px;
+        color: #32363e;
+        font-family: Muli;
+    }
+
+    .detail {
+        font-size: 13pt;
+        font-family: Muli;
+        color: #32363e;
+    }
+
+    .competency_assessment__wheel {
+        font-family: Muli;
+        font-size: 14pt;
+        font-weight: 800;
+        color: #32363e;
+        margin: 30px 0px 20px 0px;
+    }
+
+    .competency_assessment__wheel__chart {
+        font-family: Muli;
+        font-size: 12pt !important;
+    }
+
+    .assessment_title {
+        font-family: Muli;
+        font-size: 14pt;
+        font-weight: 800;
+        color: #32363e;
+        height: 18px;
+        margin: 0 0 0 50px;
+    }
+
+    .personality_summary {
+        color: #699AFF;
+        text-align: left;
+        line-height: 30px;
+        font-size: 14pt;
+        font-weight: 800;
+        padding-top: 30px;
+        font-family: Muli;
+    }
+
+    /* vietnamese */
+    @font-face {
+        font-family: 'Muli';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk40eiNxw.woff2) format('woff2');
+
+    } 
+
+    /* latin-ext */
+    @font-face {
+        font-family: 'Muli';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk50eiNxw.woff2) format('woff2');
+
+    }
+
+    /* latin */
+    @font-face {
+        font-family: 'Muli';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30eg.woff2) format('woff2');
+    }
+
+    @media print {
+        div {
+            break-inside: avoid;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <% if (resume) { %>
+            <table width="100%"
+                style="border:none;text-align: left; text-align: center;">
+                <tbody>
+                    <tr align="left">
+                        <td
+                            style="padding-left: 6%; padding-right: 5%;">
+                            <span class="title">Resume</span>
+                        </td>
+                    </tr>
+                    <tr align="left">
+                        <td
+                            style="padding-left: 6%; padding-right: 5%;">
+                            <div class="detail">
+                                <%-resume%>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+        <% } %>
+        <% if (additional_infos && isShowAdditionalInfo) { %>
+            <table width="100%"
+                style="border:none; text-align: left; text-align: center;">
+                <tr align="left">
+                    <td
+                        style="padding-left: 6%; padding-right: 5%;">
+                        <span class="title">Additional
+                            candidate information</span>
+                    </td>
+                </tr>
+    
+                <% for (let i=0; i < additional_infos.length;
+                    i++) { %>
+                    <tr align="left">
+                        <td
+                            style="padding-left: 6%; padding-right: 5%;">
+                            <div
+                                style="font-family: Muli; color: #32363e; line-height: 50px;">
+                                <% if
+                                    (additional_infos[i].value && additional_infos[i].name)
+                                    { %>
+                                    <%=additional_infos[i].name.trim()%>: <strong style="text-decoration: none; color: #699AFF"><%=additional_infos[i].value%></strong>
+                                        <% } %>
+                            </div>
+                        </td>
+                    </tr>
+                    <% } %>
+            </table>
+        <% } %>
+    </div>
+</body>
+</html>

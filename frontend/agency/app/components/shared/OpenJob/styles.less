@@ -1,0 +1,22 @@
+@import 'styles/variables';
+
+.table-action-wrapper {
+  display: flex;
+  justify-content: flex-start;
+
+  .action-item {
+    cursor: pointer;
+  }
+}
+
+.ant-tag-has-color {
+  &.progress {
+    color: @orange;
+  }
+  &.submitted {
+    color: @primary;
+  }
+  &.received {
+    color: @red-1;
+  }
+}

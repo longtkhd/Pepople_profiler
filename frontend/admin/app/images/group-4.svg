@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="397" height="222" viewBox="0 0 397 222">
+    <defs>
+        <linearGradient id="2i9y7mgiua" x1="0%" x2="100%" y1="37.602%" y2="62.398%">
+            <stop offset="0%" stop-color="#07F"/>
+            <stop offset="100%" stop-color="#6DCF74"/>
+        </linearGradient>
+        <linearGradient id="x7jhwdonrb" x1="0%" x2="100%" y1="31.312%" y2="68.688%">
+            <stop offset="0%" stop-color="#07F"/>
+            <stop offset="100%" stop-color="#6DCF74"/>
+        </linearGradient>
+        <linearGradient id="gkrwtvegyc" x1="0%" x2="100%" y1="30.86%" y2="69.14%">
+            <stop offset="0%" stop-color="#07F"/>
+            <stop offset="100%" stop-color="#6DCF74"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path fill="url(#2i9y7mgiua)" d="M180.745 35.695c41.48 0 74.557-18.96 116.736-18.96 55.379 0 89.62 27.995 97.868 66.07 7.449 34.388-50.481 58.022-97.868 67.93-47.387 9.906.184 44.513-13.277 57.536-13.461 13.024-83.36 3.678-120.875-29.302s-97.986 20.627-134.623 0C-7.932 158.342-15.252 75.973 41.053 46.354c56.305-29.62 83.693-10.66 139.692-10.66z" opacity=".796" style="mix-blend-mode:multiply" transform="translate(-515 -288) translate(515.269 288.265)"/>
+                <path fill="url(#x7jhwdonrb)" d="M239.56 7.789c73.141 9.558 143.318 43.644 136.882 64.513-6.439 20.867-28.509 26.232-24.831 41.138 3.679 14.906 40.828 41.138 31.267 56.64-9.559 15.502-76.328 10.822-120.47 25.04-44.143 14.219-84.053 31.793-110.723 22.255-31.905-11.411-20.15-50.312-63.375-61.64C45.088 144.407 6.922 102.89 32.926 45.813 58.93-11.265 156.501-3.065 239.56 7.789z" opacity=".415" style="mix-blend-mode:multiply" transform="translate(-515 -288) translate(515.269 288.265)"/>
+                <path fill="url(#gkrwtvegyc)" d="M313.01 189.317c16.176 13.515 45.298-15.106 7.279-17.493-13.142-.824-23.46 3.976-7.28 17.493z" style="mix-blend-mode:multiply" transform="translate(-515 -288) translate(515.269 288.265)"/>
+            </g>
+        </g>
+    </g>
+</svg>

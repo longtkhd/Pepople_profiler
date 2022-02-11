@@ -1,0 +1,43 @@
+@import 'styles/variables';
+
+.manage-notification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .notification-setting-list-layout {
+    width: 50%;
+
+    @media @display-xl {
+      width: 60%;
+    }
+
+    @media @display-lg {
+      width: 70%;
+    }
+
+    @media @display-md {
+      width: 90%;
+    }
+
+    @media @display-sm {
+      width: 90%;
+    }
+
+    .notification-setting-actions-layout {
+      display: flex;
+      justify-content: flex-end;
+
+      .notification-setting-actions {
+        button {
+          margin: 0px 10px;
+        }
+
+        @media @display-xs {
+          display: contents;
+        }
+      }
+    }
+  }
+}

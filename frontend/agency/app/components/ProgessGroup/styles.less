@@ -1,0 +1,44 @@
+@import 'styles/variables';
+
+.progess {
+  //   border: 1px solid black;
+
+  .ant-progress-outer {
+    padding: 0px 50px;
+
+    .ant-progress-inner {
+      border-radius: 0px !important;
+
+    }
+
+  }
+
+  .ant-progress-status-success .ant-progress-text {
+    color: @black-1;
+  }
+
+  .ant-progress-text {
+    color: @black-1;
+  }
+
+  .process--box {
+    padding: 0 20px;
+
+    @media @display-xs {
+      padding: 0;
+    }
+  }
+
+
+}
+
+.bar-chart {
+  border: 1px solid @grey-9;
+  border-radius: 2%;
+  padding: 0 10%;
+
+  @media @display-xs {
+    border-radius: unset;
+  }
+
+}

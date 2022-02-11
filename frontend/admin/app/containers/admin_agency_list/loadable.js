@@ -1,0 +1,11 @@
+/**
+ *
+ * Asynchronously loads the component for AgencyPage
+ *
+ */
+
+
+import loadable from 'utils/loadable';
+
+
+export default loadable(() => import('./index'));

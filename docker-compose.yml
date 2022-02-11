@@ -1,0 +1,47 @@
+version: "2"
+services:
+  people-profile-db:
+    image: mongo
+    container_name: people-profile-db
+    restart: unless-stopped
+    ports:
+      - "8544:27017" #specify ports forewarding
+    env_file:
+      - .env
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+  people-profile-redis:
+    container_name: people-profile-redis
+    image: redis:latest
+    ports:
+      - "8545:6379" #specify ports forewarding
+    restart: unless-stopped
+  people-profile-backend: #name of the second service
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8541:3000" #specify ports forewarding
+    container_name: people-profile-backend
+    restart: always
+    depends_on:
+        - people-profile-redis
+        - people-profile-db
+    env_file:
+      - .env
+  people-profile-frontend: #name of the second service
+    build:
+      context: ./frontend/agency
+      dockerfile: Dockerfile
+    ports:
+      - "8542:80" #specify ports forewarding
+    container_name: people-profile-frontend
+    restart: always
+  people-profile-admin: #name of the second service
+    build:
+      context: ./frontend/admin
+      dockerfile: Dockerfile
+    ports:
+      - "8543:80" #specify ports forewarding
+    container_name: people-profile-admin
+    restart: always

@@ -1,0 +1,51 @@
+@import 'styles/variables.less';
+@import 'styles/variables';
+@import 'styles/common';
+
+.agencies {
+  .ant-pagination.ant-table-pagination.ant-table-pagination-right {
+    display: none;
+  }
+
+  margin-top: 0;
+
+  .ant-table-cell {
+    text-align: center;
+  }
+
+  .ant-table-cell:last-child {
+    text-align: end;
+  }
+
+  .ant-table-cell:first-child {
+    text-align: start;
+  }
+}
+
+.btn-back {
+  margin-right: 10px;
+}
+
+.back-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 15px 40px;
+  font-weight: bold;
+}
+
+.title-argency-list {
+  padding: 0 10px;
+
+}
+
+
+
+.paginate-custom-style {
+  justify-content: flex-end;
+}
+
+.ant-btn.ant-btn-primary.btn-create {
+  @media @display-xs {
+    width: 130px;
+  }
+}

@@ -1,0 +1,103 @@
+@import 'styles/variables.less';
+@import 'styles/common.less';
+
+.deactive-button {
+  padding: 100px 0;
+}
+
+.form-ant-error {
+  position: absolute;
+  top: 90px !important;
+  left: 8%;
+}
+
+.form-control {
+  position: relative;
+}
+
+.request-change-email {
+  position: relative;
+
+  .btn.btn-default-outline {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 25px;
+    line-height: 25px;
+
+    @media screen and (max-width: 1600px) {
+        position: relative;
+    }
+  }
+}
+
+.modal-custom-request {
+  .btn-back-link {
+    top: 15px;
+  }
+
+  .ant-modal-content {
+    border-radius: 10px;
+  }
+
+  .ant-modal-header {
+    border-radius: 10px;
+  }
+}
+
+.button-submit-inside {
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+}
+
+.my-account-page {
+  .form-ant-label {
+    color: #8f949c;
+  }
+  .btn.btn-default-outline{
+    font-weight: 800;
+  }
+}
+
+
+.contact-modal-confirm {
+  .ant-modal-content {
+    border-radius: 10px;
+
+    .invite-confirm-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.08;
+        color: #32363e;
+      }
+
+      .description {
+        width: 80%;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: #32363e;
+      }
+    }
+
+    .ant-modal-confirm-btns {
+      float: unset;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+.d-none {
+  display: none;
+}

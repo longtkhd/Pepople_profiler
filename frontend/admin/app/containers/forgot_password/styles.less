@@ -1,0 +1,46 @@
+@import 'styles/variables';
+
+.layout {
+  text-align: center;
+  position: relative;
+
+  .title {
+    font-size: @font-size-super;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .button-submit {
+    width: 180px;
+    height: 40px;
+  }
+
+  .button-back {
+    position: absolute;
+    top: 25px;
+    left: 23px;
+
+    .btn-back-link {
+      top: 0;
+    }
+  }
+
+  .description {
+    font-size: @font-size-big;
+  }
+
+  .forgot-password-form {
+    .ant-form-item-explain {
+      text-align: left;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+}

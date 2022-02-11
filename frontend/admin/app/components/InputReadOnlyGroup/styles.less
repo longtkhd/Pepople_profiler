@@ -1,0 +1,26 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.input-icon {
+  text-align: center;
+  background: @grey-4;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+
+  &.delete {
+    background: none;
+    cursor: pointer;
+    color: red;
+  }
+}
+
+.input-read-group {
+  &.mb-20 {
+    margin-bottom: 20px;
+  }
+  .ant-row {
+    flex-wrap: nowrap;
+  }
+}

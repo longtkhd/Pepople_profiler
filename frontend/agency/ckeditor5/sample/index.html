@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<!--
+	Copyright (c) 2014-2022, CKSource - Frederico Knabben. All rights reserved.
+	This file is licensed under the terms of the MIT License (see LICENSE.md).
+-->
+
+<html lang="en" dir="ltr">
+
+<head>
+	<title>CKEditor 5 ClassicEditor build</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="https://c.cksource.com/a/1/logos/ckeditor5.png">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body data-editor="ClassicEditor" data-collaboration="false" data-revision-history="false">
+	<header>
+		<div class="centered">
+			<h1><a href="https://ckeditor.com/ckeditor-5/" target="_blank" rel="noopener noreferrer"><img
+						src="https://c.cksource.com/a/1/logos/ckeditor5.svg" alt="CKEditor 5 logo">CKEditor 5</a></h1>
+			<nav>
+				<ul>
+					<li><a href="https://ckeditor.com/docs/ckeditor5/" target="_blank"
+							rel="noopener noreferrer">Documentation</a></li>
+					<li><a href="https://ckeditor.com/" target="_blank" rel="noopener noreferrer">Website</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="message">
+			<div class="centered">
+				<h2>CKEditor 5 online builder demo - ClassicEditor build</h2>
+			</div>
+		</div>
+		<div class="centered">
+			<div class="row row-editor">
+				<div class="editor-container">
+					<div id="editor"></div>
+					<!-- <div class="editor">
+						<p class="P14"
+							style="display: block; margin: 0in 0px 0.0835in 0px; font-size: 12pt; font-family: Muli;   line-height: 110%; ">
+							<span class="T3"
+								style="color: rgb(0, 38, 61); font-family: Muli; font-size: 16pt; font-weight: bold; ">Candidate
+								Report – Keagen Georgiou</span>
+						</p>
+						<table cellspacing="0" cellpadding="0" class="Table1"
+							style="display: table; border-collapse: collapse; border-spacing: 0; border-color: gray; empty-cells: show; margin: 0in auto 0in 0.0049in; width: 6.4458in;   ">
+							<colgroup style="display: table-column-group; ">
+								<col width="358" style="display: table-column; ">
+								<col width="358" style="display: table-column; ">
+							</colgroup>
+							<tbody style="display: table-row-group; vertical-align: middle; ">
+								<tr class="Table11">
+									<td style="vertical-align: bottom; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #ffffff; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #ffffff; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #ffffff;    width: 3.2229in;"
+										class="Table1_A1">
+										<p class="P16"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Job Title</p>
+									</td>
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 3.2222in;"
+										class="Table1_B1">
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+								<tr class="Table11">
+									<td style="vertical-align: bottom; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #ffffff; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #ffffff; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #ffffff;    width: 3.2229in;"
+										class="Table1_A1">
+										<p class="P16"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Client</p>
+									</td>
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; padding: 0in 0.075in 0in 0.075in;    width: 3.2222in;"
+										class="Table1_B2">
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+								<tr class="Table11">
+									<td style="vertical-align: bottom; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #ffffff; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #ffffff; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #ffffff;    width: 3.2229in;"
+										class="Table1_A1">
+										<p class="P16"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Client Contact</p>
+									</td>
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 3.2222in;"
+										class="Table1_B1">
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+								<tr class="Table11">
+									<td style="vertical-align: bottom; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #ffffff; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #ffffff; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #ffffff;    width: 3.2229in;"
+										class="Table1_A1">
+										<p class="P16"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Consultant</p>
+									</td>
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; padding: 0in 0.075in 0in 0.075in;    width: 3.2222in;"
+										class="Table1_B4">
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											Sam Wood</p>
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											Principal Consultant</p>
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											Sam.wood@troocoo.com</p>
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											0413 688 566</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="P15"
+							style="display: block; margin: 0.1665in 0px 0.0835in 0px; font-size: 12pt; font-family: Muli;   line-height: 110%; ">
+							<span class="T3"
+								style="color: rgb(0, 38, 61); font-family: Muli; font-size: 16pt; font-weight: bold; ">Candidate
+								Summary</span>
+						</p>
+						<table border="0" cellspacing="0" cellpadding="0" class="Table2"
+							style="display: table; border-collapse: collapse; border-spacing: 0; border-color: gray; empty-cells: show; margin: 0in auto 0in 0.0049in; width: 6.4458in;   ">
+							<colgroup style="display: table-column-group; ">
+								<col width="358" style="display: table-column; ">
+								<col width="358" style="display: table-column; ">
+							</colgroup>
+							<tbody style="display: table-row-group; vertical-align: middle; ">
+								<tr class="Table21">
+									<td style="vertical-align: bottom; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #ffffff; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #ffffff; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #ffffff;    width: 3.2229in;"
+										class="Table2_A1">
+										<p class="P16"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Current Position</p>
+									</td>
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 3.2222in;"
+										class="Table2_B1">
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											Role</p>
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											Company</p>
+									</td>
+								</tr>
+								<tr class="Table21">
+									<td style="vertical-align: bottom; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #ffffff; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #ffffff; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #ffffff;    width: 3.2229in;"
+										class="Table2_A1">
+										<p class="P16"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Current Remuneration</p>
+									</td>
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; padding: 0in 0.075in 0in 0.075in;    width: 3.2222in;"
+										class="Table2_B2">
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+								<tr class="Table21">
+									<td style="vertical-align: bottom; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #ffffff; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #ffffff; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #ffffff;    width: 3.2229in;"
+										class="Table2_A1">
+										<p class="P16"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Notice Period</p>
+									</td>
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 3.2222in;"
+										class="Table2_B1">
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+								<tr class="Table21">
+									<td style="vertical-align: bottom; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #ffffff; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #ffffff; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #ffffff;    width: 3.2229in;"
+										class="Table2_A1">
+										<p class="P16"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Expected Remuneration</p>
+									</td>
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; padding: 0in 0.075in 0in 0.075in;    width: 3.2222in;"
+										class="Table2_B4">
+										<p class="P19"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="P23"
+							style="display: block; margin: 0in 0px 0.0835in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<table border="0" cellspacing="0" cellpadding="0" class="Table3"
+							style="display: table; border-collapse: collapse; border-spacing: 0; border-color: gray; empty-cells: show; margin: 0in auto 0in 0.0035in; width: 6.45in;   ">
+							<colgroup style="display: table-column-group; ">
+								<col width="716" style="display: table-column; ">
+							</colgroup>
+							<tbody style="display: table-row-group; vertical-align: middle; ">
+								<tr class="Table31">
+									<td style="vertical-align: top; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0176cm; border-left-style: solid; border-left-color: #000000; border-right-width: 0.0176cm; border-right-style: solid; border-right-color: #000000; border-top-width: 0.0176cm; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6;    width: 6.45in;"
+										class="Table3_A1">
+										<p class="P18"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); ">
+											<span class="T11" style="font-weight: bold; ">Background</span>
+										</p>
+									</td>
+								</tr>
+								<tr class="Table31">
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 6.45in;"
+										class="Table3_A2">
+										<p class="P20"
+											style="display: block; margin: 0in 0px 0.0835in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											<a id="_Hlk74991678" style=""></a>
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="P24"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<table border="0" cellspacing="0" cellpadding="0" class="Table4"
+							style="display: table; border-collapse: collapse; border-spacing: 0; border-color: gray; empty-cells: show; margin: 0in auto 0in 0.0035in; width: 6.45in;   ">
+							<colgroup style="display: table-column-group; ">
+								<col width="716" style="display: table-column; ">
+							</colgroup>
+							<tbody style="display: table-row-group; vertical-align: middle; ">
+								<tr class="Table41">
+									<td style="vertical-align: top; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0176cm; border-left-style: solid; border-left-color: #000000; border-right-width: 0.0176cm; border-right-style: solid; border-right-color: #000000; border-top-width: 0.0176cm; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6;    width: 6.45in;"
+										class="Table4_A1">
+										<p class="P18"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); ">
+											<span class="T11" style="font-weight: bold; ">Reason for
+												leaving current role / motivations for applying</span>
+										</p>
+									</td>
+								</tr>
+								<tr class="Table41">
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 6.45in;"
+										class="Table4_A2">
+										<p class="P20"
+											style="display: block; margin: 0in 0px 0.0835in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="P24"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<table border="0" cellspacing="0" cellpadding="0" class="Table5"
+							style="display: table; border-collapse: collapse; border-spacing: 0; border-color: gray; empty-cells: show; margin: 0in auto 0in 0.0035in; width: 6.45in;   ">
+							<colgroup style="display: table-column-group; ">
+								<col width="716" style="display: table-column; ">
+							</colgroup>
+							<tbody style="display: table-row-group; vertical-align: middle; ">
+								<tr class="Table51">
+									<td style="vertical-align: top; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0176cm; border-left-style: solid; border-left-color: #000000; border-right-width: 0.0176cm; border-right-style: solid; border-right-color: #000000; border-top-width: 0.0176cm; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6;    width: 6.45in;"
+										class="Table5_A1">
+										<p class="P18"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); ">
+											<span class="T11" style="font-weight: bold; ">Reasons
+												for shortlisting</span>
+										</p>
+									</td>
+								</tr>
+								<tr class="Table51">
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 6.45in;"
+										class="Table5_A2">
+										<p class="P20"
+											style="display: block; margin: 0in 0px 0.0835in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="P24"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<table border="0" cellspacing="0" cellpadding="0" class="Table6"
+							style="display: table; border-collapse: collapse; border-spacing: 0; border-color: gray; empty-cells: show; margin: 0in auto 0in 0.0035in; width: 6.45in;   ">
+							<colgroup style="display: table-column-group; ">
+								<col width="716" style="display: table-column; ">
+							</colgroup>
+							<tbody style="display: table-row-group; vertical-align: middle; ">
+								<tr class="Table61">
+									<td style="vertical-align: top; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0176cm; border-left-style: solid; border-left-color: #000000; border-right-width: 0.0176cm; border-right-style: solid; border-right-color: #000000; border-top-width: 0.0176cm; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6;    width: 6.45in;"
+										class="Table6_A1">
+										<p class="P18"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); ">
+											<span class="T11" style="font-weight: bold; ">Relevant
+												technical experience</span>
+										</p>
+									</td>
+								</tr>
+								<tr class="Table61">
+									<td style="vertical-align: top; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 6.45in;"
+										class="Table6_A2">
+										<p class="P21"
+											style="display: block; margin: 0in 0px 0.0835in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="P24"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<table border="0" cellspacing="0" cellpadding="0" class="Table7"
+							style="display: table; border-collapse: collapse; border-spacing: 0; border-color: gray; empty-cells: show; margin: 0in auto 0in 0.0035in; width: 6.45in;   ">
+							<colgroup style="display: table-column-group; ">
+								<col width="716" style="display: table-column; ">
+							</colgroup>
+							<tbody style="display: table-row-group; vertical-align: middle; ">
+								<tr class="Table71">
+									<td style="vertical-align: top; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0176cm; border-left-style: solid; border-left-color: #000000; border-right-width: 0.0176cm; border-right-style: solid; border-right-color: #000000; border-top-width: 0.0176cm; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6;    width: 6.45in;"
+										class="Table7_A1">
+										<p class="P18"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); ">
+											<span class="T11" style="font-weight: bold; ">Cultural
+												fit</span>
+										</p>
+									</td>
+								</tr>
+								<tr class="Table71">
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 6.45in;"
+										class="Table7_A2">
+										<p class="P20"
+											style="display: block; margin: 0in 0px 0.0835in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="P24"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+						</p>
+						<table border="0" cellspacing="0" cellpadding="0" class="Table8"
+							style="display: table; border-collapse: collapse; border-spacing: 0; border-color: gray; empty-cells: show; margin: 0in auto 0in 0.0035in; width: 6.45in;   ">
+							<colgroup style="display: table-column-group; ">
+								<col width="716" style="display: table-column; ">
+							</colgroup>
+							<tbody style="display: table-row-group; vertical-align: middle; ">
+								<tr class="Table81">
+									<td style="vertical-align: top; font-size: 12pt; background-color: rgb(0, 38, 61); padding: 0in 0.075in 0in 0.075in; border-left-width: 0.0176cm; border-left-style: solid; border-left-color: #000000; border-right-width: 0.0176cm; border-right-style: solid; border-right-color: #000000; border-top-width: 0.0176cm; border-top-style: solid; border-top-color: #000000; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6;    width: 6.45in;"
+										class="Table8_A1">
+										<p class="P17"
+											style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(255, 255, 255); font-weight: bold; ">
+											Available for interview</p>
+									</td>
+								</tr>
+								<tr class="Table81">
+									<td style="vertical-align: bottom; font-size: 12pt; border-top-width: 0.0265cm; border-top-style: solid; border-top-color: #e7e6e6; border-left-width: 0.0265cm; border-left-style: solid; border-left-color: #e7e6e6; border-bottom-width: 0.0265cm; border-bottom-style: solid; border-bottom-color: #e7e6e6; border-right-width: 0.0265cm; border-right-style: solid; border-right-color: #e7e6e6; background-color: rgb(242, 242, 242); padding: 0in 0.075in 0in 0.075in;    width: 6.45in;"
+										class="Table8_A2">
+										<p class="P20"
+											style="display: block; margin: 0in 0px 0.0835in 0px; font-size: 11pt; font-family: Muli;   line-height: 110%; color: rgb(0, 38, 61); ">
+											&nbsp;</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6"
+								style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">OVERVIEW</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">A
+								senior Finance leader with over 10 years of experience in financial services, and a
+								passion for developing high performing teams and individuals. Brings a pragmatic and
+								commercial mindset with expertise in strategy development, mergers and acquisitions,
+								growth strategies and efficiency programs. A true business partner with proven
+								experience collaborating with senior stakeholders to deliver insights and help
+								businesses to achieve their performance goals.</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">KEY
+								STRENGTHS &amp; EXPERIENCE:</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<ul style="list-style: none; display: block; list-style-type: disc; ">
+							<li style="display: list-item; list-style: none; ">
+								<p class="P4"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Leading and
+										developing high performing teams, building a culture of
+										collaboration.</span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P4"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Relationship
+										management, developing strong partnerships cross-divisionally and
+										externally.</span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P4"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Critical
+										analysis to deliver insights, develop strategy, and execute with commercial
+										acumen.</span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P4"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Extensive
+										understanding of the financial services environment, including governance,
+										legislation, regulation, and market trends.</span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P4"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Demonstrated
+										capacity to deliver under pressure and manage large, diverse workloads to a high
+										standard.</span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+						</ul>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">CAREER
+								HISTORY</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Head
+								of Finance Business Partnering &amp; Reporting (Acting)</span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">QSuper
+							</span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">April
+								2020 to current</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Key
+								Responsibilities:</span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">A
+								secondment to the role of Head of Finance Business Partnering &amp; Reporting providing
+								leadership, advice, and direction to a team of 25 employees, the majority operating as
+								strategic business partners. The opportunity arose as a result of merger discussions
+								between QSuper and Sunsuper to create Australia’s second biggest (over $200bn)
+								superannuation fund.</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">The
+								primary focus of the role has been to work closely with the CFO and act as a trusted
+								adviser to Senior Management, ensuring they receive appropriate financial advice and
+								support through a period of significant uncertainty (including the impact of COVID-19
+								and the impending &nbsp;merger). </span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Business as usual
+								responsibilities include management of team engagement, operational cost management,
+								financial oversight of the project portfolio, insightful reporting and analytics.
+							</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">These
+								have been balanced with leadership responsibilities within the merger integration
+								program, with accountability to ensure operational readiness of all critical finance and
+								tax requirements, including a current and future state assessment of the finance system.
+							</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">In
+								addition, responsibilities include ownership of the overall Joint Business Case for the
+								merger, with joint modelling developed with the team at Sunsuper, in collaboration with
+								PwC. The business case required substantial Board engagement as a key artefact
+								supporting the decision to merge.</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Key
+								Achievements:</span>
+						</p>
+						<ul style="list-style: none; display: block; list-style-type: disc; ">
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Drove an
+										above target performance result for employee engagement (94%) in 2021, a great
+										result maintained from the prior years. Engagement activities introduced during
+										the year included onsite collaboration days and a new “buddy” program whilst the
+										team transitioned to the new working from home environment.</span><span
+										class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Delivered
+										two organisational budgets requiring significant Board engagement. &nbsp;Both
+										budgets were uniquely challenging due to the impact of COVID-19 and the
+										impending merger. </span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Introduced
+										monthly reporting in response to a heightened focus by the Board on financial
+										performance throughout the merger process. The process improved engagement with
+										the Board, resulting in positive feedback from Trustees.</span><span
+										class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Introduced
+										a new Financial Capital Management Policy incorporating reserve management
+										guidelines. </span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Sponsored a
+										large data and reporting project. The initiative is targeted at implementing
+										best practice data management and analytics capabilities to drive meaningful and
+										actionable insights across a range of business functions. </span><span
+										class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Chaired the
+										monthly Growth Working Group, setting and delivering to targets in the FY21
+										financial year. In FY21 targets were delivered whilst managing challenges such
+										as membership and FUM retention and individual channel budgets.</span><span
+										class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Conducted a
+										mid-year review of the total portfolio with a subsequent reprioritisation,
+										returning unspent funds back into the general reserve. </span><span
+										class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Delivered
+										critical Merged Fund governance documents including combined reserve policies,
+										Delegations policy and procurement frameworks.</span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Drove a
+										current and future state assessment of the finance systems under the finance and
+										tax stream of the merger. </span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P5"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Collaborated
+										and partnered across Divisions, removing siloed thinking and encouraging
+										accountability.</span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+						</ul>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Senior
+								Finance Business Partner</span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">QSuper
+							</span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">March
+								2016 to April 2020</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Key
+								Responsibilities:</span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Executive
+								relationship accountability with the support of a team of six qualified business
+								partners. Financial support included budget management and commercial advice to the
+								Executive leadership team across businesses including product, strategy, sales,
+								marketing, project delivery, technology and member servicing. The role also included
+								working closely with the CFO to manage broader group matters such as group budgets,
+								project financial oversight and consolidated group reporting. </span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Key
+								Achievements:</span>
+						</p>
+						<ul style="list-style: none; display: block; list-style-type: disc; ">
+							<li style="display: list-item; list-style: none; ">
+								<p class="P6"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Built a
+										strong team of high performing professionals, well-regarded by the senior
+										leadership team.</span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P6"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Seconded
+										into the strategy function to support the development of an organisational
+										growth strategy including economic and financial modelling, scenario analysis,
+										change management and Executive engagement. The role required working closely
+										with a large strategy consultant.</span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P6"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Developed a
+										member profitability framework, including an assessment of the impact of
+										different member cohorts on the fixed and variable components of the cost base.
+										This analysis was used to inform member administration fee reviews and the
+										profitability of new strategic growth channels.</span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P6"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Supported
+										the implementation of a new greenfield strategic growth channel, including
+										supporting the commercial negotiations with four start-up organisations. The
+										business case required significant financial modelling, leveraging the newly
+										developed member profitability framework.</span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P6"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Regular
+										oversight of the finances of the change portfolio including a monthly
+										presentation to the executive project committee. </span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P6"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Developed a
+										total cost of ownership model for the Information Technology Executive to better
+										inform strategic cost management decisions.</span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P6"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Introduced
+										an Executive level Member Report as the finance business partner to the Member
+										Experience division. </span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+						</ul>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Finance
+								Business Partner</span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">QSuper
+								&nbsp; &nbsp; </span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">July
+								2012 to March 2016</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Key
+								Responsibilities:</span>
+						</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Reporting into the
+								Senior Finance Business Partner, the primary accountability of the role was to provide
+								financial support to the senior leadership team. Responsibilities included commercial
+								accounting activities such as budgeting, forecasting, project business case support and
+								direct finance support to senior leaders.</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Key
+								achievements:</span>
+						</p>
+						<ul style="list-style: none; display: block; list-style-type: disc; ">
+							<li style="display: list-item; list-style: none; ">
+								<p class="P7"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Identified
+										as leadership talent and joined the group-wide leadership program, completing a
+										diploma of Management with the Australian Institute of Management.</span><span
+										class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P7"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Developed
+										numerous internal financial management reports, including a dashboard for the
+										CFO to track group-wide financial metrics.</span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P7"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Played a
+										key role in a large-scale infrastructure outsourcing initiative, working
+										directly with the Chief Technology Officer. The role required model development
+										working with a top tier consultancy organisation.</span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P7"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+										&nbsp;-&nbsp;&nbsp;</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Delivered a
+										dynamic, organisation wide project reporting dashboard and a scorecard reporting
+										toolset that remains in place today. </span><span class="odfLiEnd"
+										style="">&nbsp;</span>
+								</p>
+							</li>
+						</ul>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">OVERALL
+								CAREER SUMMARY:</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Please
+								note that only most recent experience has been captured in the detail above. Further
+								information is available upon request.</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6" style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">QSuper,
+							</span>
+						</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P8"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">April
+									2020 - present &nbsp; </span><span class="odfLiEnd" style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Head
+								of Finance Business Partnering &amp; Reporting (acting) &nbsp; </span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P8"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">March
+									2016 - March 2020 &nbsp; </span><span class="odfLiEnd" style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Senior
+								Finance Business Partner &nbsp; </span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P8"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">July
+									2012 – March 2016 &nbsp; </span><span class="odfLiEnd" style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Finance Business
+								Partner &nbsp; </span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P8"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">January
+									2011 - June 2012 &nbsp; </span><span class="odfLiEnd" style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Fund
+								Financial Accountant &nbsp; </span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P10"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">July
+									2010 – December 2010 &nbsp; </span><span class="odfLiEnd" style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Regulatory Analyst
+								&nbsp; </span>
+						</p>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">UBS,
+								London</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P10"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">October
+									2009 - May 2010 &nbsp; </span><span class="odfLiEnd" style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Reporting Analyst
+								&nbsp; </span>
+						</p>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Barclays Capital,
+								London</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P10"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">February
+									2009 – June 2009 &nbsp; </span><span class="odfLiEnd" style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Tutor
+								– Financial Accounting &nbsp; </span>
+						</p>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Griffith
+								University, Gold Coast</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P10"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">September
+									2005 - June 2009 &nbsp; </span><span class="odfLiEnd" style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Business Services
+								Accountant &nbsp; </span>
+						</p>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Thiel
+								Partners, Gold Coast</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							<span class="T6"
+								style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">QUALIFICATIONS:
+								&nbsp; </span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P11"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Chartered
+									Accountants Australia and New Zealand, Australia </span><span class="odfLiEnd"
+									style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">2006 –
+								2008</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+						</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P11"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Griffith
+									University, Gold Coast, Australia </span><span class="odfLiEnd"
+									style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">2003 –
+								2006</span>
+						</p>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">Bachelor of
+								Business (Majors included Accounting and Finance)</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<li style="display: list-item; list-style: none; ">
+							<p class="P11"
+								style="display: block; margin: 0in 0in 0in 0.635cm; font-size: 12pt; font-family: Muli;   text-indent: -0.25in; ">
+								<span style=" display: block; float: left; min-width: 0cm;">&nbsp;
+									&nbsp;-&nbsp;&nbsp;</span><span class="T6"
+									style="color: rgb(0, 38, 61); font-size: 11pt; font-weight: bold; ">Pretoria
+									Boys High School, Pretoria, South Africa </span><span class="odfLiEnd"
+									style="">&nbsp;</span>
+							</p>
+						</li>
+						<p class="P9"
+							style="display: block; margin: 0in 0in 0in 0.25in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">1998 –
+								2002</span>
+						</p>
+						<ul style="list-style: none; display: block; list-style-type: disc; ">
+							<li style="display: list-item; list-style: none; ">
+								<p class="P12"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span class="ListLabel_20_22"
+										style=" display: block; float: left; min-width: 0cm;">oo</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Matric
+										(Year 12) Certificate</span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+							<li style="display: list-item; list-style: none; ">
+								<p class="P12"
+									style="display: block; margin: 0in 0px 0in 0cm; font-size: 12pt; font-family: Muli;   ">
+									<span class="ListLabel_20_22"
+										style=" display: block; float: left; min-width: 0cm;">oo</span><span class="T7"
+										style="color: rgb(0, 38, 61); font-size: 11pt; ">Achievements
+										– Prefect and Head of House </span><span class="odfLiEnd" style="">&nbsp;</span>
+								</p>
+							</li>
+						</ul>
+						<p class="P13"
+							style="display: block; margin: 0in 0in 0in 0.5in; font-size: 12pt; font-family: Muli;   text-indent: 0in; ">
+							<span class="T7" style="color: rgb(0, 38, 61); font-size: 11pt; ">2002</span>
+						</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P2"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 11pt; font-family: Muli;   color: rgb(0, 38, 61); ">
+							&nbsp;</p>
+						<p class="P3"
+							style="display: block; margin: 0in 0px 0in 0px; font-size: 12pt; font-family: Muli;   ">
+							&nbsp;</p>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		</div>
+	</main>
+	<footer>
+		<p><a href="https://ckeditor.com/ckeditor-5/" target="_blank" rel="noopener">CKEditor 5</a>
+			– Rich text editor of tomorrow, available today
+		</p>
+		<p>Copyright © 2003-2022,
+			<a href="https://cksource.com/" target="_blank" rel="noopener">CKSource</a>
+			– Frederico Knabben. All rights reserved.
+		</p>
+	</footer>
+	<script src="../build/ckeditor.js"></script>
+	<script>
+		function AllowLinkTarget(editor) {
+			// Allow the "linkTarget" attribute in the editor model.
+			editor.model.schema.extend('$text', { allowAttributes: 'style' });
+		}
+
+		ClassicEditor
+			.create(document.querySelector('#editor'), {
+				toolbar: {
+					items: [
+						'heading',
+						'|',
+						'alignment',
+						'outdent',
+						'indent',
+						'|',
+						'bold',
+						'italic',
+						'underline',
+						'strikethrough',
+						'subscript',
+						'superscript',
+						'code',
+						'-',
+						'codeBlock',
+						'blockQuote',
+						'link',
+						'uploadImage',
+						'insertTable',
+						'mediaEmbed',
+						'|',
+						'bulletedList',
+						'numberedList',
+						'todoList',
+						'|',
+						'undo',
+						'redo',
+						'|',
+						'sourceEditing'
+					],
+					shouldNotGroupWhenFull: true
+				},
+				table: {
+					contentToolbar: [
+						'tableColumn', 'tableRow', 'mergeTableCells',
+						'tableProperties', 'tableCellProperties'
+					]
+				},
+				image: {
+					toolbar: [
+						'linkImage',
+						'|',
+						'imageStyle:block',
+						'imageStyle:side',
+						'|',
+						'imageTextAlternative',
+						'toggleImageCaption'
+					]
+				},
+				htmlSupport: {
+					allow: [
+						{
+							name: /.*/,
+							attributes: true,
+							classes: true,
+							styles: true
+						}
+					],
+					disallow: [
+						{
+							attributes: [
+								{ key: /^on(.*)/i, value: true },
+								{ key: /.*/, value: /(\b)(on\S+)(\s*)=|javascript:|(<\s*)(\/*)script/i },
+								{ key: /.*/, value: /data:(?!image\/(png|jpg|jpeg|gif|webp))/i }
+							]
+						},
+						{ name: 'script' }
+					]
+				},
+				
+			})
+			.then(editor => {
+				window.editor = editor;
+
+			})
+			.catch(err => {
+				console.error('Oops, something went wrong!');
+				console.error('Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:');
+				console.warn('Build id: iagwjy5dejti-2zjo18qnyf08');
+				console.error(err);
+			})
+	</script>
+</body>
+
+</html>

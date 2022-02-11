@@ -1,0 +1,60 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.congratulation {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* max-width: 1024px; */
+  padding: 30px 0;
+  width: 100%;
+  height: auto;
+  @media @display-xs {
+    // margin: 15px;
+  }
+
+  .congratulation-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .congratulation-image {
+    position: relative;
+    width: 400px;
+    margin: 0 auto 34px auto;
+    @media @display-xs {
+      width: 300px;
+    }
+    @media @display-super-tiny {
+      width: 230px;
+    }
+  }
+
+  .congratulation-content {
+    margin-bottom: 30px;
+
+    .congratulation-content__1 {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .congratulation-content__2 {
+      font-size: 13px;
+    }
+  }
+
+  .congratulation-login {
+  }
+}
+
+.icon-human {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

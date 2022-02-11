@@ -1,0 +1,139 @@
+@import "variables";
+
+body,
+html {
+  height: 100%;
+}
+.table table td, .table table th{border:1px solid #bfbfbf}
+.text-center {
+  text-align: center;
+}
+
+.submit-layout {
+  align-items: center;
+}
+
+.centered-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-primary {
+  color: @primary;
+}
+
+.color-orange {
+  color: @orange;
+}
+
+.color-grey {
+  color: @grey-1;
+}
+
+.color-red {
+  color: @red-1;
+}
+
+.color-blur {
+  color: @blur;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.w-150 {
+  width: 150px;
+}
+.w-140 {
+  width: 140px;
+}
+.w-147{
+  width: 147px;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.component-bg {
+  background-color: @white;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.notification-content-highlight {
+  color: @primary;
+  font-weight: bold;
+}
+
+.btn-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  img {
+    position: absolute;
+    left: 5px;
+  }
+}
+
+.grey-button {
+  color: @white;
+  background-color: @grey-1;
+}
+
+.table-action {
+  cursor: pointer;
+  margin-right: 10px;
+
+  .anticon {
+    margin-right: 5px;
+  }
+}
+
+.expiry-date-container {
+  .ant-form-item-label {
+    label::after {
+      display: inline-block;
+      margin-left: 4px;
+      color: #ff4d4f;
+      font-size: 12px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: '*';
+    }
+  }
+}

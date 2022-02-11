@@ -1,0 +1,49 @@
+@import 'styles/variables';
+.feed-back-form {
+    padding-top: 30px;
+    border-top: 1px solid @grey-8;
+    background: @white;
+
+    .ant-radio-group {
+        .ant-radio-button-wrapper:not(:first-child)::before{
+          background-color: unset
+        }
+        .interview-btn{
+          background: #3abcca !important;
+          border-color: #3abcca;
+        }
+        .status-button {
+          width: 161px;
+          height: 40px;
+          background: #8f949c;
+          color: #ffffff;
+          font-size: 14px;
+          margin-right: 15px;
+          border-radius: 20px;
+        }
+
+        .ant-radio-button-wrapper-checked.status-button {
+            background: #3abcca !important;
+            border-color: #3abcca;
+        }
+      }
+
+    textarea.ant-input {
+        background-color: @white;
+        border-radius: 5px;
+    }
+
+    .submmit-button {
+        border-top: 1px solid @grey-8;
+        margin-top: 50px;
+        padding: 50px 0;
+
+        button {
+            width: 150px;
+        }
+    }
+    .ant-rate.star-rate{
+      color: #3abcca !important;
+      padding: 15px;
+    }
+}

@@ -1,0 +1,200 @@
+@import 'styles/variables';
+
+.company-info-form {
+  .background-image-upload {
+    .ant-upload-select-picture-card {
+      height: 32px;
+      border: none;
+      margin: 0px;
+
+      .ant-upload {
+        background: @primary-button-background;
+        border-radius: @button-border-radius;
+        min-width: 184px;
+      }
+    }
+
+    .upload-background-layout {
+      display: flex;
+      align-items: center;
+
+      .icon-area {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 6px;
+      }
+
+      .text-area {
+        margin-left: 16px;
+        font-size: @font-size-small;
+        color: @white;
+      }
+    }
+  }
+
+  .logo-upload {
+     .ant-form-item-explain {
+       margin-left: 20%;
+     }
+
+    .ant-upload-picture-card-wrapper {
+      float: left;
+      display: flex;
+      justify-content: center;
+
+      .ant-upload-select-picture-card {
+        border: none;
+        background-color: @grey-4;
+        height: 150px;
+        width: 150px;
+        // float: right;
+      }
+    }
+
+    .upload-logo-layout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .icon-area {
+        width: 50px;
+        height: 50px;
+        background: @primary-button-background;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .text-area {
+        margin-top: 8px;
+        font-size: @font-size-small;
+        color: @grey-7;
+      }
+    }
+
+    .ant-form-item-label {
+      text-align: center;
+      .label-with-tooltip {
+        width: 150px;
+        text-align: left;
+        margin-left: -8px;
+      }
+    }
+    .logo-tips {
+      text-align: center;
+      span {
+        width: 241px;
+        text-align: left;
+        margin: 0 auto;
+        padding-left: 40px;
+        display: block;
+        color: #8f949c;
+      }
+    }
+  }
+
+  .input-color-container {
+    display: flex;
+    .input-color-item {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      margin-right: 16px;
+      background-color: @grey-4;
+      @media screen and (max-width: 360px) {
+        padding: 4px;
+        margin-right: 8px;
+      }
+
+      .input-color-title {
+        margin-right: 8px;
+        font-weight: bold;
+      }
+
+      .input-color {
+        display: flex;
+      }
+    }
+
+    .css-1yn2e29-InputColor,
+    .css-j4ndc3 {
+      width: 24px;
+      padding: 0;
+      border-radius: 50%;
+
+      .css-1vpurlb-InputColor,
+      .css-trkpwz {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .submit-layout {
+    .ant-btn {
+      width: 180px;
+    }
+  }
+
+  .label-with-tooltip {
+    .anticon {
+      margin-left: 2px;
+    }
+  }
+
+  .helper {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .example {
+      font-weight: bold;
+      margin-left: 2px;
+    }
+  }
+
+  .ant-form-item-label {
+    label {
+      height: 24px;
+    }
+  }
+  .update-agency-info {
+    
+    .logo-upload .ant-upload-select-picture-card {
+      width: 80%;
+    }
+    .upload-button-group {
+      display: flex;
+      width: 80%;
+      justify-content: center;
+
+      button {
+        width: 80px;
+        height: 30px;
+        border-radius: 22.5px;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.input-color {
+  margin-top: calc(150px - 40px - 24px - 40px);
+  margin-top: -webkit-calc(150px - 40px - 24px - 40px);
+  margin-top: -moz-calc(150px - 40px - 24px - 40px);
+}
+
+.input-color-item-message {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  color: @grey-3;
+}
+
+
+ 

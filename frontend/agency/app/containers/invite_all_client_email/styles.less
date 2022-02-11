@@ -1,0 +1,165 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.title-invite-client {
+  font-family: Muli;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #32363e;
+}
+.email-user-template{
+  button {
+    font-weight: 800;
+  }
+  .ck-content {
+    .table{
+      margin: unset;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.content-editor {
+  .ck-blurred.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+    background-color: #f4f6f9;
+    // min-height: 300px;
+  }
+}
+
+.action-invite {
+  margin-top: 30px;
+}
+
+.gradient-button {
+  border: 1px solid @primary;
+  color: @white;
+  background: @primary-button-background;
+  box-shadow: @primary-button-box-shadow;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.content-editor {
+  a {
+    background: linear-gradient(to left, #5c96d4, #24bbce);
+    padding: 11px 15px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(58, 188, 202, 0.17);
+  }
+}
+
+
+
+.t-center {
+  text-align: center;
+}
+
+
+.deactive-button {
+  padding: 100px 0;
+}
+
+.form-ant-error {
+  position: absolute;
+  top: 90px !important;
+  left: 5%;
+}
+
+.form-control {
+  position: relative;
+}
+
+.request-change-email {
+  position: relative;
+
+  .btn.btn-default-outline {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 25px;
+    line-height: 25px;
+  }
+}
+
+.modal-custom-request {
+  .btn-back-link {
+    top: 15px;
+  }
+
+  .ant-modal-content {
+    border-radius: 10px;
+  }
+
+  .ant-modal-header {
+    border-radius: 10px;
+  }
+
+  .ant-modal-footer {
+    border: none;
+  }
+}
+
+.button-submit-inside {
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+  display: flex;
+  font-weight: 800;
+}
+
+.form__save__template {
+  position: relative;
+
+  .button__save_template {
+    position: absolute;
+    left: 69%;
+    bottom: 12%;
+
+    @media @display-lg {
+      left: 50%;
+      bottom: 12%;
+    }
+
+    @media @display-md {
+      left: 0;
+      bottom: 12%;
+    }
+
+    @media @display-xs {
+      left: 0;
+      bottom: 12%;
+    }
+
+  }
+
+}
+
+.row__button__email {
+  @media @display-xl {
+    justify-content: flex-end !important;
+  }
+
+
+}
+
+.styles__email {
+  max-width: 140px !important;
+  width: 100% !important;
+}
+
+@media @display-xs {
+  .t-center {
+    margin-bottom: 10px;
+    button{
+      width: 90% !important;
+      max-width: unset !important;
+    }
+  }
+}

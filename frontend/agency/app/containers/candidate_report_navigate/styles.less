@@ -1,0 +1,66 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.wrapper-candidate-navigate {
+  button:disabled {
+  pointer-events: auto ! important;
+  cursor: not-allowed ! important;
+  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 20px 30px;
+  background-color: @white;
+  box-shadow: 0 -1px 0 0 #e7e7e7, 0 -1px 10px 0 rgba(50, 54, 62, 0.1);
+}
+.addCandidateIntoJobModal{
+  .ant-modal-title{
+    font-family: Muli;
+    font-size: 22px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #32363e;
+  }
+
+}
+
+.btn-add-candidate-to-job-active{
+  background-image: linear-gradient(to left, #5c96d4, #24bbce);
+  color: white;
+}
+.addCandidateIntoJobModal{
+  .ant-modal-footer{
+    padding-bottom: 18px;
+    button{
+      display: inline-block;
+      width: 77px;
+      height: 40px;
+      border: none;
+      &:hover{
+        outline: none;
+        border: none;
+      }
+      color: white;
+      &:first-child{
+        background-color: #f54e60;
+      }
+    }
+  }
+}
+
+.btn-default-outline {
+  border: 1px solid @primary;
+  color: @grey-3;
+  box-shadow: @primary-button-box-shadow;
+
+  &:hover {
+    border: none;
+    background: @primary;
+    color: @white;
+  }
+}

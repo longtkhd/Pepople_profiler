@@ -1,0 +1,45 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo Entered the install phase...
+      - apt-get update -y
+      - apt-get install apt-transport-https
+      # Setup for Yarn
+      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+      - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+      # Do it!
+      - apt-get update -y
+      - apt-get install -y yarn
+      - cd frontend/admin
+      # Upgrade AWS CLI to the latest version
+      - pip install --upgrade awscli
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+      - yarn
+      - yarn add cross-env
+  build:
+    commands:
+      - echo Entered the build phase...
+      - export API_URL=${API_URL}
+      - yarn run build
+      # update Protractor and Selenium including ChromeDriver
+      # run Protractor E2E tests
+      # Copy the git commit info it into a file from which it can be shown in UI
+      - echo Build completed on `date`
+
+  post_build:
+    commands:
+     - aws s3 rm s3://ppp-admin --recursive
+     - echo S3 bucket is cleared.
+        # Copy dist folder to S3 bucket, As of Angular 6, builds are stored inside an app folder in distribution and not at the root of the dist folder
+     - aws s3 cp dist s3://ppp-admin --recursive
+     - echo Build completed on `date`
+
+artifacts:
+  files:
+    - frontend/admin/**/*

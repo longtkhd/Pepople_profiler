@@ -1,0 +1,57 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.ant-input.form-input-ant-inline-custom {
+  width: 100%;
+  border: none;
+  padding: 0 11px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid @grey-4;
+  // position: relative;
+  background: @grey-4;
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(31, 69, 80, 0.2);
+  }
+}
+.ant-input.form-input-ant-inline-custom.theme-white {
+  background: @white;
+  &:focus {
+    border-color: @primary;
+    border-right-width: 1px !important;
+    outline: 0;
+    box-shadow: @default-button-box-shadow;
+  }
+}
+
+// input edit inline css
+
+.inline-text_copy--active,
+.inline-text_input--active {
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  padding: 0;
+  background: none;
+  border: none;
+  border-bottom: 1px dashed #666666;
+  width: 100%;
+}
+
+.inline-text_copy--active {
+  cursor: pointer;
+}
+
+.inline-text_copy--hidden,
+.inline-text_input--hidden {
+  display: none;
+}
+
+.inline-text_input--active {
+  border-bottom: 1px solid #666666;
+  text-align: left;
+}
+select.form-field-edit.form-input-toggle:focus{
+  outline: none;
+}

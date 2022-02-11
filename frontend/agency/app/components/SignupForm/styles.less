@@ -1,0 +1,31 @@
+@import 'styles/variables';
+
+.signup-form {
+  .signup-form__item {
+    padding: 0px 2px;
+  }
+
+  .submit-layout {
+    margin-top: 20px;
+
+    button {
+      width: 180px;
+    }
+
+    @media @display-xs {
+      margin-top: 10px;
+
+      button {
+        width: 150px;
+      }
+    }
+  }
+
+  @media @display-xs {
+    .ant-form-item-label {
+      label {
+        font-size: 10px;
+      }
+    }
+  }
+}

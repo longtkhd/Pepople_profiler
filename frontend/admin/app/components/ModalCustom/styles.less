@@ -1,0 +1,40 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+
+.ant-modal {
+  &.modal-custom {
+    .ant-modal-body {
+      max-height: 243px;
+      overflow-y: scroll;
+    }
+  }
+
+
+  &.modal-custom-request {
+
+
+    .ant-modal-content {
+      border-radius: 20px !important;
+    }
+
+
+    .ant-modal-header {
+      border-bottom: none;
+      border-radius: 15px;
+
+    }
+
+    .ant-modal-footer {
+      border-top: 0;
+
+
+    }
+
+    .ant-modal-body {
+      overflow: inherit;
+      padding: 0;
+
+    }
+  }
+}

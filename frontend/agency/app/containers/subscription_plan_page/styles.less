@@ -1,0 +1,140 @@
+@import 'styles/variables';
+
+.main-layout {
+  .sub-plan__container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    .subscription-form-container {
+      width: 60%;
+      .plan-list {
+        flex-direction: row;
+      }
+
+      .subscription-header {
+        justify-content: center;
+        margin-bottom: 50px;
+
+        div {
+          div {
+            font-size: 22px;
+            font-weight: bold;
+            color: #32363e;
+          }
+
+          .color-primary {
+            color: #3abcca;
+          }
+        }
+      }
+
+      .billing-type {
+        margin-top: 60px;
+      }
+
+      .footer {
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        .subscribe-button {
+          position: unset;
+          margin-left: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1880px) {
+  .sub-plan__container {
+    .subscription-form-container {
+      width: 65% !important;
+    }
+  }
+}
+
+@media @display-xl {
+  .sub-plan__container {
+    .subscription-form-container {
+      width: 85% !important;
+    }
+  }
+}
+
+@media @display-md {
+  .sub-plan__container {
+    .subscription-form-container {
+      .plan-list {
+        .plan-item {
+          margin: 0 5px;
+          .subscription-plan-container {
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @display-sm {
+  .sub-plan__container {
+    .subscription-form-container {
+      width: 100% !important;
+
+      .plan-list {
+        flex-direction: column !important;
+        align-items: center;
+
+        .plan-item {
+          margin: 10px 0px;
+
+          .subscription-plan-container {
+            .plan-description {
+              max-width: 220px;
+            }
+          }
+        }
+
+      }
+
+      .billing-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .billing-text {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+      }
+
+      .footer .total .total-amount {
+        font-size: 16px;
+      }
+
+      .footer .subscribe-button button {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media @display-xs {
+  .sub-plan__container {
+    .subscription-form-container {
+      width: 100%;
+
+      .plan-list {
+        flex-direction: column !important;
+        align-items: center;
+      }
+
+      .footer .total .total-amount {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+

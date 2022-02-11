@@ -1,0 +1,65 @@
+@import 'styles/variables';
+@import 'styles/common';
+.btn-with-icon {
+  &:hover .overlay-invite {
+    visibility: visible;
+    opacity: 1;
+  }
+  .overlay-invite {
+    z-index: 100;
+    top: 120%;
+    right: 0;
+    background: @white;
+    display: block;
+    width: 220px;
+    position: absolute;
+    text-align: left;
+    box-shadow: @grey-button-box-shadow;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    .overlay-invite-link {
+      font-weight: normal;
+      font-size: 12px;
+      padding: 13px 20px;
+      display: block;
+      color: @black-1;
+      &:first-child {
+        border-bottom: 1px solid @grey-4;
+      }
+    }
+  }
+  &.btn-inviteRecruiter{
+    width: 140px;
+  }
+}
+
+.actions {
+  float: left;
+  .icon-inline{
+    display: inline-flex;
+    .anticon{
+      margin-top: 2px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+  .re-invite{
+    font-size: 12px;
+    width: 87px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.color-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.paginate-custom-style {
+  justify-content: flex-end;
+}

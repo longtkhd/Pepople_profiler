@@ -1,0 +1,69 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.input-icon {
+  text-align: center;
+  background: @grey-4;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+
+  &.delete {
+    background: none;
+    cursor: pointer;
+    color: red;
+  }
+}
+
+.input-read-group {
+  &.mb-20 {
+    margin-bottom: 20px;
+  }
+  .ant-custom-input.textarea-custom,
+  .ant-input.ant-custom-input {
+    border-radius: 4px;
+    color: @black-1;
+  }
+  .ant-input.ant-custom-input.w-150 {
+    width: 150px;
+  }
+  .ant-input.ant-custom-input.w-220 {
+    width: 220px;
+  }
+  .ant-custom-input.textarea-custom {
+    width: 386px;
+  }
+  .ant-row {
+    flex-wrap: nowrap;
+    @media @display-xs {
+      flex-direction: column;
+      & > div {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .ant-col {
+    @media @display-xs {
+      width: 100%;
+      display: block;
+      .input-icon {
+        margin: 0 auto;
+      }
+    }
+  }
+  &.input-gender {
+    .ant-col {
+      // @media @display-xs {
+      //   width: 100%;
+      //   display: block;
+      //   .input-icon {
+      //     margin: 0 auto;
+      //   }
+      // }
+    }
+  }
+  .read-only-bg{
+    color: #32363e
+  }
+}

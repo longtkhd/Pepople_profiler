@@ -1,0 +1,105 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.table-action-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.action-type-btn {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+
+  &.primary-outline {
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid @primary;
+    padding: 4px 15px;
+    box-shadow: @primary-button-box-shadow;
+    color: @grey-3;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: @primary;
+      color: @white;
+    }
+  }
+
+  &.secondary-outline {
+    display: inline-block;
+    width: 117px;
+    border-radius: 20px;
+    border: 1px solid @grey-3;
+    padding: 4px 15px;
+    box-shadow: @grey-button-box-shadow;
+    color: @grey-3;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: @grey-3;
+      color: @white;
+    }
+  }
+
+  &.action-type-common {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    @media @display-sm {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    @media @display-xs {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      font-size: 10px;
+    }
+  }
+
+  .action-icon {
+    margin-right: 4px;
+  }
+
+  &.close-role {
+    color: @orange;
+  }
+
+  &.view {
+    color: @primary;
+  }
+
+  &.pdf {
+    color: @orange;
+  }
+
+  &.deactive,
+    {
+    color: @orange;
+  }
+
+  &.refresh {
+    color: @orange;
+  }
+
+  &.invite {}
+
+  &.view-feedback {}
+
+  &.delete {
+    color: @red-1;
+  }
+
+  &.add,
+  &.edit,
+  &.manage {
+    color: @primary;
+  }
+}

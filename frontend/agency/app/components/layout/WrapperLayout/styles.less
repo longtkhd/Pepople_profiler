@@ -1,0 +1,36 @@
+@import 'styles/variables';
+
+.layout-container {
+  background-image: url('../../../images/background1.jpg');
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 140%;
+}
+
+@media @display-xl {
+  .layout-container {
+    background-size: 162%;
+  }
+}
+
+@media @display-lg {
+  .layout-container {
+    background-size: 200%;
+  }
+}
+
+@media @display-md {
+  .layout-container {
+    background-size: 270%;
+  }
+}
+
+@media @display-sm {
+  .layout-container {
+    background-size: 420%;
+  }
+}

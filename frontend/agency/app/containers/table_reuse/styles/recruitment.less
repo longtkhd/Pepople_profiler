@@ -1,0 +1,42 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.wrapper-recruitment-activity {
+
+  flex-wrap: wrap;
+  // justify-content: flex-start;
+  @media @display-lg {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper-recruitment-left,
+  .wrapper-recruitment-right {
+     // justify-content: flex-start;
+  @media @display-sm {
+    // max-width: 100%;
+  }
+  }
+
+}
+
+.recruitment-activity-row {
+
+}
+
+.recruitment-activity-item {
+  background-color: #ddd;
+}
+
+.recruitment-left,
+.recruitment-right {
+  flex-direction: column;
+}
+
+.wrapper-recuitment-btn {
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+  .recuitment-btn {
+    width: 180px;
+  }
+}

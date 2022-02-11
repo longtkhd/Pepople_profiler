@@ -1,0 +1,137 @@
+@import 'variables';
+
+// change ant design default theme
+@font-family: @font;
+// @primary-color: @black-1;
+@body-background: @grey-4;
+@component-background: @white;
+@text-color: @black-1;
+@font-size-base: @font-size-normal;
+
+// @icon-color: @grey-3;
+@input-icon-color: @grey-8;
+
+@btn-height-base: 40px;
+@btn-font-weight: 'bold';
+@btn-border-radius-base: @button-border-radius;
+@btn-border-width: @button-border-width;
+@btn-primary-shadow: @primary-button-box-shadow;
+@btn-primary-color: @white;
+@btn-primary-bg: @primary-button-background;
+@btn-default-color: @grey-3;
+// @btn-default-border: @default-button-border;
+@btn-danger-color: @white;
+@btn-danger-bg: @red-1;
+
+@input-height-base: 40px;
+@input-bg: @grey-4;
+@radio-button-color: @grey-2;
+@form-item-label-font-size: @font-size-small;
+@form-item-margin-bottom: 20px;
+
+html {
+  --antd-wave-shadow-color: @primary;
+}
+
+button {
+  font-size: @font-size-normal;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.ant-btn {
+  height: 40px;
+
+  &.ant-btn-default {
+    border-color: @blue-2;
+  }
+
+  &.ant-btn-primary {
+    border: none;
+    background-size: 100%;
+    background-image: @primary-button-background;
+    position: relative;
+    z-index: 100;
+    &:before {
+      border: none;
+      background-image: @primary-button-background-hover;
+      content: '';    
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      opacity: 0;
+      width: 100%;
+      z-index: -100;
+      transition: opacity 0.3s;
+    }
+    &:hover {
+      border: none;
+       &:before {
+         opacity: 1; 
+       }
+    }
+  }
+}
+
+.ant-form {
+  label {
+    font-size: @font-size-small;
+  }
+}
+
+.ant-form-item-label {
+  padding: 0 !important;
+
+  label {
+    color: @grey-1;
+    font-weight: bold;
+
+    &.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+      display: none;
+    }
+
+    &.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+      display: inline-block;
+      margin-left: 4px;
+      color: #ff4d4f;
+      font-size: 12px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: '*';
+    }
+  }
+}
+
+.ant-form-item-explain {
+  white-space: pre-line;
+}
+
+.ant-pagination-item, .ant-pagination-item-link {
+  border-radius: 50% !important;
+}
+
+.ant-pagination-item-active { 
+  background-color: @primary !important;
+  border: 1px solid @primary !important;
+  &:hover, &:focus {
+    a {
+      color:white;
+
+    }
+  }
+  a {
+    color: white;
+    &:hover {
+      color:white;
+    }
+  }
+}
+
+.ant-tag {
+  border-radius: 14px;
+}

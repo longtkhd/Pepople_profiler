@@ -1,0 +1,94 @@
+@import 'styles/variables';
+
+.step-layout {
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+  .step-header {
+    width: 90%;
+    margin: 0 auto;
+    .btn-back-steps {
+      position: relative;
+      top:50px;
+      left: -50px;
+      @media @display-lg {
+            top: 120px;
+            left: 5px;
+      }
+
+    
+        
+    }
+
+    .ant-steps-item {
+      .ant-steps-item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media @display-md {
+          margin-left: 0px;
+        }
+
+        .ant-steps-item-content {
+          .ant-steps-item-title {
+            font-size: @font-size-small;
+            font-weight: bold;
+            color: @grey-5;
+
+            @media @display-md {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      &.ant-steps-item-active {
+        &:before {
+          background-color: @primary;
+        }
+
+        .ant-steps-item-container {
+          .ant-steps-item-content .ant-steps-item-title {
+            color: @primary;
+          }
+        }
+      }
+
+      &.ant-steps-item-finish {
+        .ant-steps-item-container {
+          .ant-steps-item-content .ant-steps-item-title {
+            color: @primary;
+          }
+        }
+      }
+    }
+  }
+
+  .steps-content {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px 0px;
+  }
+}
+
+.notification-layout {
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+
+  .notification-text {
+    font-size: @font-size-bigger;
+    text-align: center;
+  }
+
+  .resend-button-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .resend-button {
+      width: 180px;
+      margin: 10px;
+    }
+  }
+}

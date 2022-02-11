@@ -1,0 +1,30 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .head-left {
+    display: flex;
+    align-items: center;
+  }
+  .head-right {
+  }
+ 
+
+  @media @display-xs {
+    flex-direction: column-reverse;
+    .head-right {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.body {
+  .body-group {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+// .wrapper-popconfirm {
+//   .ant-popover-buttons {
+//     button {
+//       width: 100px;
+//     }
+//   }
+// }
+
+.ant-popover.ant-popconfirm {
+  .ant-popover-inner {
+    padding: 5px;
+  }
+  .ant-popover-buttons {
+    margin-bottom: 0;
+    button {
+      margin: 0;
+      height: auto;
+      border: 0;
+      border: 1px solid @grey-4;
+      box-shadow: none;
+      &:hover {
+        border-color: @black-1;
+      }
+      &:last-child {
+        background-color: @primary;
+        background-image: none;
+      }
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+}

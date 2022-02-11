@@ -1,0 +1,115 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.ant-table-wrapper {
+  width: 100%;
+  // overflow-x: auto;
+  &.table-custom {
+    & > .ant-table {
+      // overflow-x: auto;
+    }
+  }
+  .ant-spin.ant-spin-spinning {
+    .ant-spin-dot-item {
+      background-color: @primary;
+    }
+  }
+
+  .ant-table-thead {
+    .ant-table-cell:last-child {
+      text-align: right;
+    }
+  }
+  .ant-table-tbody {
+    .ant-table-cell:last-child {
+      text-align: end;
+    }
+  }
+  // .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+  // .ant-checkbox:hover .ant-checkbox-inner,
+  // .ant-checkbox-input:focus + .ant-checkbox-inner {
+  //   border-color: @primary;
+  // }
+  // .ant-checkbox-checked .ant-checkbox-inner {
+  //   background-color: @primary;
+  //   border-color: @primary;
+  // }
+
+  .placeholder-input {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
+.pagination-simple-ui {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.paginate-custom-flex-end {
+  justify-content: flex-end;
+}
+
+.next-paginate {
+  margin-left: 5px;
+}
+
+.prev-paginate {
+  margin-right: 5px;
+}
+
+.next-paginate,
+.prev-paginate {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  // margin: 1px 5px !important;
+  //  border: 1px solid #d9d9d9 !important;
+
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  button:hover {
+    border: 1px solid #1890ff;
+  }
+
+
+  .previous {
+    background-color: white;
+    color: black;
+
+  }
+
+  a {
+    border: none;
+  }
+
+  .next {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.25);
+
+
+  }
+
+}
+
+.round {
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-pagination-options {
+  display: none !important;
+}

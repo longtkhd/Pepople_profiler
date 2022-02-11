@@ -1,0 +1,12 @@
+/*
+ *
+ * NotificationSetting constants
+ *
+ */
+
+export const GET_NOTIFICATION_SETTING = 'app/NotificationSetting/GET_NOTIFICATION_SETTING';
+export const GET_NOTIFICATION_SETTING_SUCCESS = 'app/NotificationSetting/GET_NOTIFICATION_SETTING_SUCCESS';
+export const GET_NOTIFICATION_SETTING_FAILED = 'app/NotificationSetting/GET_NOTIFICATION_SETTING_FAILED';
+export const UPDATE_NOTIFICATION_SETTING = 'app/NotificationSetting/UPDATE_NOTIFICATION_SETTING';
+export const UPDATE_NOTIFICATION_SETTING_SUCCESS = 'app/NotificationSetting/UPDATE_NOTIFICATION_SETTING_SUCCESS';
+export const UPDATE_NOTIFICATION_SETTING_FAILED = 'app/NotificationSetting/UPDATE_NOTIFICATION_SETTING_FAILED';

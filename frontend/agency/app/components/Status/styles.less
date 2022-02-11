@@ -1,0 +1,32 @@
+@import "styles/variables";
+@import "styles/common";
+
+
+.status {
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+  display: inline-block;
+  user-select: none;
+  .responsive-size-atom();
+
+  &.theme-warning {
+    background: @orange-light;
+    color: @orange;
+  }
+
+  &.theme-danger {
+    background: @pink;
+    color: @red-1;
+  }
+
+  &.theme-primary {
+    background: @aqua;
+    color: @primary;
+  }
+
+  &.theme-secondary {
+    background: @grey-6;
+    color: @black-1;
+  }
+}

@@ -1,0 +1,51 @@
+@import 'styles/variables';
+
+.register-layout {
+  height: 100%;
+
+  .main-register-layout {
+    align-self: center;
+    width: 72%;
+    height: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    .register-logo {
+      padding: 39px 0;
+      .logo-link {
+        width: 168px;
+        display: block;
+      }
+
+      @media @display-xs {
+        padding: 30px 0;
+      }
+    }
+
+    .main-content {
+      height: 600px;
+      background-color: @white;
+      border-radius: @primary-border-radius;
+
+      .spin-layout {
+        height: 100%;
+      }
+    }
+  }
+}
+.join-page-footer{
+  display: flex;
+  justify-content: center;
+  padding: 18px 0;
+
+  .helper-links {
+    a {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .divider {
+      color: #ffffff;
+    }
+  }
+}

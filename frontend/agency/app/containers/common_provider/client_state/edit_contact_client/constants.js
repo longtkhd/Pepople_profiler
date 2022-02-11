@@ -1,0 +1,11 @@
+/*
+ *
+ * CLIENT DELETE CONTACT LIST DETAIL constants
+ *
+ */
+
+
+export const INIT_EDIT_CONTACT_CLIENT = 'app/client_state/INIT_EDIT_CONTACT_CLIENT';
+export const EDIT_CONTACT_CLIENT_SUCCESS = 'app/client_state/EDIT_CONTACT_CLIENT_SUCCESS';
+export const EDIT_CONTACT_CLIENT_FAIL = 'app/client_state/EDIT_CONTACT_CLIENT_FAIL';
+export const CLEAN_UP_EDIT_CONTACT_CLIENT = 'app/client_state/CLEAN_UP_EDIT_CONTACT_CLIENT';

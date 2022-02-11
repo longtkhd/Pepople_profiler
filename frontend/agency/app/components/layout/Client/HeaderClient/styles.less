@@ -1,0 +1,48 @@
+@import 'styles/variables';
+
+.header-client {
+  color: @white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  // padding: 0 40px;
+
+  @media @display-xs {
+    padding: 0 10px;
+  }
+
+  .header-item {
+    flex: 1;
+
+    .text-welcome {
+      font-size: 30px;
+      position: relative;
+      margin-left: 80px;
+
+      @media @display-xs {
+        font-size: @font-size-small;
+      }
+
+      .sub-slogant {
+        font-size: 10px;
+        position: absolute;
+        left: 50px;
+        bottom: -10px;
+
+      }
+    }
+
+    .header-logo {
+      .logo-link {
+        margin: 0 auto;
+        width: 168px;
+        display: block;
+
+        @media @display-xs {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

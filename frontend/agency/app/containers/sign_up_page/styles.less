@@ -1,0 +1,129 @@
+@import 'styles/variables';
+
+.layout {
+  text-align: center;
+  position: relative;
+
+  .title {
+    font-size: @font-size-super;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-bottom: 15px;
+
+    @media @display-md {
+      font-size: @font-size-bigger;
+    }
+
+    @media @display-sm {
+      font-size: @font-size-bigger;
+    }
+
+    @media @display-xs {
+      font-size: @font-size-big;
+    }
+
+    .title-first-row {
+      padding: 0 20px;
+      position: relative;
+      .btn-back-link {
+        top: 0;
+      }
+    }
+  }
+
+  .description {
+    font-size: @font-size-big;
+    font-weight: normal;
+    margin-bottom: 10px;
+
+    .description-line-2 {
+      font-weight: bold;
+    }
+
+    @media @display-md {
+      font-size: 16px;
+    }
+
+    @media @display-sm {
+      font-size: @font-size-normal;
+    }
+
+    @media @display-xs {
+      font-size: @font-size-small;
+    }
+  }
+
+  .sign-up-form {
+    width: 50%;
+    margin: 0 auto;
+    max-height: 460px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    @media @display-md {
+      width: 60%;
+    }
+
+    .ant-form-item {
+      .ant-form-item-label {
+        padding: 0;
+        height: 32px
+      }
+    }
+
+    .ant-form-item-explain {
+      text-align: left;
+    }
+  }
+
+  .email-logo {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    img {
+      color: @primary;
+    }
+  }
+
+  .email-title {
+    width: 300px;
+    font-size: @font-size-bigger;
+    font-weight: bold;
+    margin: 0 auto 40px;
+  }
+
+  .email-description {
+    width: 500px;
+    margin: 0 auto 40px;
+
+    @media @display-md {
+      width: 300px;
+    }
+    
+    @media @display-xs {
+      width: 250px;
+    }
+
+    .email-description-line-1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .verify-email-actions {
+    button {
+      width: 180px;
+      margin: 0px 10px;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+
+    @media @display-xs {
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.ant-upload {
+  &.ant-upload-drag {
+    width: 210px;
+    margin: 0 auto;
+    border: 1px dashed transparent;
+    background: none;
+
+    &:hover {
+      border: 1px dashed red;
+    }
+  }
+
+  .ant-upload-text {
+    width: 145px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 21px;
+
+    p {
+      line-height: 2;
+    }
+  }
+
+  .ant-upload-hint {
+    &.btn-default-outline {
+      margin: 0 auto;
+
+      .icon-btn {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.ant-upload-list.ant-upload-list-text {
+  width: 500px;
+  margin: 0 auto;
+}

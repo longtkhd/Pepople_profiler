@@ -1,0 +1,186 @@
+@import 'styles/variables';
+
+.subscription-form-container {
+  width: 100%;
+
+  .subscription-header {
+    .title {
+      margin: 12px 0;
+
+      .title-number-agency {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input{
+          width: 100px;
+          text-align: center;
+          margin-left: 15px;
+        }
+      }
+
+      .title-content{
+        margin-top: 30px;
+        font-size: 14px !important;
+        color: #32363e;
+        text-align: center;
+        font-weight: normal !important;
+      }
+    }
+  }
+
+  .plan-list {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    .plan-item {
+      padding: 0 10px;
+      cursor: pointer;
+
+      &.plan-item-selected {
+        .subscription-plan-container {
+          color: @white;
+          background: @primary-button-background;
+          .plan-name {
+            color: @white !important;
+          }
+
+          .plan-detail {
+            color: @white !important;
+          }
+
+          .plan-button {
+            button {
+              background: #ffffff !important;
+              color: #3abcca !important;
+              border-color: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .billing-type {
+    margin-top: 20px;
+    margin-left: 15px;
+
+    .billing-text {
+      margin-right: 10px;
+      font-family: Muli;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #8f949c;
+    }
+    .ant-radio-group{
+      font-family: Muli;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+    .ant-radio-button-wrapper {
+      margin: 0 5px;
+      border-radius: @button-border-radius;
+      border-left-width: 1.02px;
+      width: 90px;
+      height: 38px !important;
+
+      &:before {
+        display: none;
+      }
+
+      &.ant-radio-button-wrapper-checked {
+        background: @primary-button-background;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+
+    .subscribe-button {
+      position: absolute;
+      right: 0;
+      button {
+        width: 180px;
+      }
+
+      @media @display-md {
+        top: 40px;
+      }
+    }
+
+    .total {
+      .total-text{
+        font-size: 14px;
+        color: #8f949c;
+        margin-right: 14px;
+        font-weight: bold;
+      }
+      .total-amount {
+        color: @black-1;
+        font-size: @font-size-bigger;
+      }
+    }
+  }
+}
+
+.subscription-modal-confirm {
+  .ant-modal-content {
+    border-radius: 10px;
+
+    .confirm-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-bottom: 10px;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.08;
+        color: #32363e;
+      }
+      .description {
+        width: 80%;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: #32363e;
+      }
+    }
+    .ant-modal-confirm-btns{
+      float: unset;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .ant-btn {
+        width: 77px;
+        background-color: #f54e60;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.subscription-plan-container {
+  width: auto !important;
+  max-width: 253px;
+}

@@ -1,0 +1,27 @@
+@import 'styles/variables';
+
+.header {
+  color: @white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 40px;
+  @media @display-xs {
+    padding: 0 10px;
+  }
+  .header-item {
+    flex: 1;
+
+    .header-logo {
+      .logo-link {
+        margin: 0 auto;
+        width: 168px;
+        display: block;
+        @media @display-xs {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

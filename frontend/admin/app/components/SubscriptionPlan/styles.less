@@ -1,0 +1,65 @@
+@import 'styles/variables';
+
+.subscription-plan-container {
+  width: 215px;
+  height: 426px;
+  border-radius: 5px;
+  border: 1px solid #e2e8f1;
+  box-shadow: 0 5px 10px 0 rgba(55, 201, 239, 0.17);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  .plan-name {
+    font-size: @font-size-bigger;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+
+  .plan-description {
+    max-width: 180px;
+  }
+
+  .plan-price {
+    font-weight: bold;
+  }
+
+  .plan-button {
+    margin-bottom: 15px;
+
+    button {
+      color: @white;
+      width: 117px;
+    }
+  }
+
+  .basic {
+    color: @purple;
+    button {
+      background-color: @purple;
+    }
+  }
+
+  .standard {
+    color: @aquamarine;
+    button {
+      background-color: @aquamarine;
+    }
+  }
+
+  .plus {
+    color: @orange;
+    button {
+      background-color: @orange;
+    }
+  }
+
+  .premium {
+    color: @red-1;
+    button {
+      background-color: @red-1;
+    }
+  }
+}

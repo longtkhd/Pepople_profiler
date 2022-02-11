@@ -1,0 +1,83 @@
+@import 'styles/variables';
+
+.subscription-form-container {
+  .header {
+    .title {
+      margin: 12px 0;
+    }
+  }
+
+  .plan-list {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    .plan-item {
+      margin: 0 15px;
+      cursor: pointer;
+
+      &.plan-item-selected {
+        color: @white;
+        background: @primary-button-background;
+
+        .subscription-plan-container {
+          .plan-name {
+            color: @white !important;
+          }
+
+          .plan-button {
+            button {
+              background: #ffffff !important;
+              color: #3abcca !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .billing-type {
+    margin-top: 20px;
+    margin-left: 15px;
+
+    .billing-text {
+      margin-right: 10px;
+    }
+
+    .ant-radio-button-wrapper {
+      margin: 0px 5px;
+      border-radius: @button-border-radius;
+
+      &:before {
+        display: none;
+      }
+
+      &.ant-radio-button-wrapper-checked {
+        background: @primary-button-background;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+
+    .subscribe-button {
+      position: absolute;
+      right: 0;
+      button {
+        width: 180px;
+      }
+    }
+
+    .total {
+      .total-amount {
+        color: @black-1;
+        font-size: @font-size-bigger;
+      }
+    }
+  }
+}

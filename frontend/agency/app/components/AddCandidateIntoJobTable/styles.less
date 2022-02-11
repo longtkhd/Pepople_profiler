@@ -1,0 +1,70 @@
+@import 'styles/variables';
+@import 'styles/common';
+.btn-with-icon {
+  &:hover .overlay-invite {
+    visibility: visible;
+    opacity: 1;
+  }
+  .overlay-invite {
+    z-index: 100;
+    top: 120%;
+    right: 0;
+    background: @white;
+    display: block;
+    width: 220px;
+    position: absolute;
+    text-align: left;
+    box-shadow: @grey-button-box-shadow;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    .overlay-invite-link {
+      font-weight: normal;
+      font-size: 12px;
+      padding: 13px 20px;
+      display: block;
+      color: @black-1;
+      &:first-child {
+        border-bottom: 1px solid @grey-4;
+      }
+    }
+  }
+}
+
+.actions {
+  float: left;
+}
+.addCandidateIntoJobModal {
+  overflow: hidden;
+  .ant-modal-footer {
+    text-align: center;
+    border: none;
+  }
+  .ant-table-wrapper {
+  }
+  .ant-modal-content {
+    border-radius: 10px;
+    .ant-modal-header {
+      border-radius: 10px;
+    }
+  }
+  .paginate-custom-style {
+  }
+  
+}
+
+.paginate-custom-style {
+  // margin: 0;
+}
+.paginate-custom-style-hidden {
+    display: none;
+  }
+.title-bussiness-name-bold {
+  font-weight: bold;
+}
+
+.table_job_exclude_candidate {
+  table {
+    // height: 340px;
+  }
+}

@@ -1,0 +1,43 @@
+@import 'styles/variables';
+
+.agency-setup-done-container {
+  .title {
+    display: flex;
+    justify-content: center;
+    font-size: @font-size-super;
+    font-weight: bold;
+    margin: 10px 0 8px;
+  }
+
+  .image {
+    height: 221px;
+    display: flex;
+    justify-content: center;
+    background: url('../../images/icons/group-3.png') no-repeat center center;
+
+    .inline {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .text {
+        margin-right: 10px;
+        font-size: @font-size-bigger;
+        color: @white;
+        width: 188px;
+
+        .big-text {
+          font-size: 31px;
+        }
+      }
+    }
+  }
+
+  .description {
+    max-width: 549px;
+  }
+
+  .done-button {
+    width: 180px;
+  }
+}

@@ -1,0 +1,26 @@
+@import 'styles/variables';
+
+.menu-item {
+  display: flex;
+  justify-content: flex-start;
+  height: 40px;
+  align-items: center;
+  border-bottom: solid 1px #e4e6ef;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @grey-6;
+  }
+
+  .icon {
+    margin: 0 20px;
+    @media @display-xs {
+      margin: 0 10px;
+    }
+  }
+
+  .menu-title {
+    font-size: @font-size-small;
+    color: @black-1;
+  }
+}

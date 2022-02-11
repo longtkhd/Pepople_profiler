@@ -1,0 +1,123 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.section.wrapper-edit-profiler {
+  background-color: transparent;
+  padding: 0;
+}
+
+.profiler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .profiler-head {
+    margin-bottom: 30px;
+
+    .profiler-name {
+      font-weight: 800;
+      margin-bottom: 0;
+    }
+
+    .profiler-avatar {
+      img {
+        max-width: 74px;
+        max-height: 74px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .profiler-body {
+    // text-align: justify;
+    padding-bottom: 30px;
+
+    .profiler-wrapper-field {
+      .form-ant-group .ant-input.form-ant-input {
+        background-color: @white !important;
+        min-width: 300px;
+      }
+
+      flex-direction: column;
+
+      .infoEdit {
+        font-size: @font-size-big;
+        color: @black-1;
+        font-weight: normal;
+      }
+      .ant-input.label-profile,
+      input.format__number
+      {
+        background: white !important;
+      }
+      input {
+        border:none !important;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-variant: tabular-nums;
+        list-style: none;
+        font-feature-settings: 'tnum';
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        min-width: 0;
+        padding: 8px 11px;
+        color: #32363e;
+        font-size: 14px;
+        line-height: 1.5715;
+        background-color: #f4f6f9;
+        background-image: none;
+        border: 1px solid #d9d9d9;
+        border-radius: 2px;
+        transition: all 0.3s;
+      }
+      input:focus {
+            border-color: #40a9ff;
+            border-right-width: 1px !important;
+            outline: 0;
+            box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+      }
+    }
+  }
+}
+
+.wrapper-btn-edit {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .profiler {
+    .profiler-body {
+      .profiler-wrapper-field {
+        .form-ant-group .ant-input.form-ant-input {
+          min-width: 280px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .profiler {
+    .profiler-body {
+      .profiler-wrapper-field {
+        .form-ant-group .ant-input.form-ant-input {
+          min-width: 225px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .profiler {
+    .profiler-body {
+      .profiler-wrapper-field {
+        .form-ant-group .ant-input.form-ant-input {
+          min-width: 300px;
+        }
+      }
+    }
+  }
+}

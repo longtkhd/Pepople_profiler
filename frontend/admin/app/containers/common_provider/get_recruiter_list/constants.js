@@ -1,0 +1,17 @@
+/*
+ *
+ * Get recruiter list constants
+ *
+ */
+
+export const GET_RECRUITER_LIST = 'app/GetRecruiterList/GET_RECRUITER_LIST';
+export const GET_RECRUITER_LIST_SUCCESS = 'app/GetRecruiterList/GET_RECRUITER_LIST_SUCCESS';
+export const GET_RECRUITER_LIST_ERROR = 'app/GetRecruiterList/GET_RECRUITER_LIST_ERROR';
+
+export const GET_RECRUITER_LIST_BY_ADMIN = 'app/GetRecruiterList/GET_RECRUITER_LIST_BY_ADMIN';
+export const GET_RECRUITER_LIST_BY_ADMIN_SUCCESS = 'app/GetRecruiterList/GET_RECRUITER_LIST_BY_ADMIN_SUCCESS';
+export const GET_RECRUITER_LIST_BY_ADMIN_ERROR = 'app/GetRecruiterList/GET_RECRUITER_LIST_BY_ADMIN_ERROR';
+
+export const GET_RECRUITER_LIST_INFO = 'app/GetRecruiterList/GET_RECRUITER_LIST_INFO'
+export const GET_RECRUITER_LIST_INFO_SUCCESS = 'app/GetRecruiterList/GET_RECRUITER_LIST_INFO_SUCCESS'
+export const GET_RECRUITER_LIST_INFO_ERROR = 'app/GetRecruiterList/GET_RECRUITER_LIST_INFO_ERROR'

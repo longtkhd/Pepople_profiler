@@ -1,0 +1,60 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.wrapper-tab {
+  .ant-tabs-nav {
+    .ant-tabs-nav-wrap {
+      justify-content: center;
+    }
+  }
+  .ant-tabs-tab-active {
+    border-bottom-color: none;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: @primary;
+  }
+  .ant-tabs-tab:hover {
+    color: @primary;
+  }
+  .ant-tabs-tab {
+    .ant-tabs-tab-btn:active,
+    .ant-tabs-tab-btn:focus {
+      color: @primary;
+    }
+  }
+  // .ant-tabs-tab-btn:focus,
+  // .ant-tabs-tab-remove:focus,
+  // .ant-tabs-tab-btn:active,
+  // .ant-tabs-tab-remove:active {
+  //   color: @primary;
+  // }
+  // .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active {
+
+  // }
+  .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab-active,
+  .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab-active {
+    color: @primary;
+    background-color: #ddd;
+  }
+}
+[data-theme='compact'] .custom-collapse,
+.custom-collapse-panel,
+.custom-collapse-collapse .custom-collapse-panel {
+  // background: #f4f6f9;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  border: 0px;
+  overflow: hidden;
+}
+.ant-collapse-borderless > .custom-collapse-panel {
+  border-bottom: 0;
+  // border: 1px solid #ddd;
+  // border-radius: 10px;
+}
+.custom-collapse-panel {
+  background-color: @white;
+}
+.ant-collapse-borderless {
+  background-color: @grey-4;
+}

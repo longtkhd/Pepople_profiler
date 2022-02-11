@@ -1,0 +1,54 @@
+@import 'styles/variables';
+
+.navbar {
+  width: 100%;
+
+  .navbar-menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-item {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+      @media @display-xs {
+        margin-right: 10px;
+      }
+    }
+
+    & > * {
+      font-size: 30px;
+      @media @display-xs {
+        font-size: 18px;
+      }
+    }
+
+    .ant-badge {
+      color: @white;
+    }
+  }
+}
+
+.ant-popover-inner {
+  border-radius: 5px;
+  width: 220px;
+  box-shadow: 0 5px 15px 0 rgba(79, 82, 110, 0.15);
+  background-color: @white;
+
+  .ant-popover-inner-content {
+    padding: 0;
+  }
+}
+
+.notification-list-popover {
+  .ant-popover-content {
+    .ant-popover-inner {
+      width: 320px;
+    }
+  }
+}

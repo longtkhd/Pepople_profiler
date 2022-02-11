@@ -1,0 +1,35 @@
+@import 'styles/variables';
+@import 'styles/common';
+
+.table-checkbox-custom {
+  .ant-table {
+    .ant-table-thead {
+      background: none;
+    }
+    .ant-table-thead .ant-table-cell {
+      font-size: 12px;
+      color: @grey-9;
+      text-transform: uppercase;
+    }
+    .ant-table-tbody .ant-table-cell {
+      font-size: 14px;
+    }
+  }
+
+  .ant-spin.ant-spin-spinning {
+    .ant-spin-dot-item {
+      background-color: @primary;
+    }
+  }
+
+  // .ant-checkbox-checked .ant-checkbox-inner {
+  //   background-color: @primary;
+  //   border-color: @primary;
+  // }
+  // .ant-checkbox-input:focus + .ant-checkbox-inner {
+  //   border-color: @primary;
+  // }
+  .ant-table-selection {
+    display: none;
+  }
+}

@@ -1,0 +1,159 @@
+@import 'styles/variables';
+
+.subscription-form-container {
+
+  width: 100%;
+
+  .subscription-header {
+    .title {
+      margin: 12px 0;
+
+      .title-number-agency {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input{
+          width: 100px;
+          text-align: center;
+          margin-left: 15px;
+        }
+      }
+
+      .title-content{
+        margin-top: 30px;
+        font-size: 14px !important;
+        color: #32363e;
+        text-align: center;
+        font-weight: normal !important;
+      }
+    }
+  }
+
+  .plan-list {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    height: 65%;
+
+    .plan-item {
+      padding: 0 10px;
+      cursor: pointer;
+
+      &.plan-item-selected {
+        .subscription-plan-container { 
+          color: @white;
+          background: @primary-button-background;
+          .plan-name,
+          .plan-detail {
+            color: @white !important;
+          }
+
+          .plan-button {
+            button {
+              background: #ffffff !important;
+              color: #3abcca !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .billing-type {
+    margin-top: 20px;
+    margin-left: 15px;
+
+    .billing-text {
+      margin-right: 10px;
+      color: #8f949c;
+      font-weight: bold;
+    }
+
+    .ant-radio-button-wrapper {
+      margin: 0px 5px;
+      border-radius: @button-border-radius;
+      border-left-width: 1.02px;
+
+      // &:before {
+      //   display: none;
+      // }
+
+      &.ant-radio-button-wrapper-checked {
+        background: @primary-button-background;
+      }
+    }
+  }
+ 
+
+  .subscription-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+    height: 116px;
+    background-color: @grey-4;
+
+    @media @display-xl {
+      align-items: flex-start;
+    }
+
+    .subscription-actions {
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+
+      .ant-btn {
+        width: 150px;
+
+        &:last-child {
+          margin-left: 20px;
+        }
+      }
+
+      @media @display-xl {
+        bottom: 20px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 368px;
+      }
+
+      @media @display-xs {
+        .ant-btn {
+          width: 120px;
+        }
+      }
+    }
+
+    .subscription-total {
+
+      .total-text{
+        font-size: 14px;
+        color: #8f949c;
+        margin-right: 14px;
+        font-weight: bold;
+      }
+
+      .total-amount {
+        color: @black-1;
+        font-size: @font-size-bigger;
+      }
+    }
+  }
+}
+
+.subscription-plan-container{
+  width: auto !important;
+  padding:1px;
+}
+
+// .slick-dots {}
+.slick-dots li button:before {
+  font-size: 10px !important;
+  // padding-top:20px;
+}
+

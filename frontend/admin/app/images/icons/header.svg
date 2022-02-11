@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="100px" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>8DE978B2-3154-44EF-868C-2E107C5A0F09</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="100"></rect>
+        <linearGradient x1="0%" y1="30.46875%" x2="100%" y2="69.53125%" id="linearGradient-3">
+            <stop stop-color="#0077FF" offset="0%"></stop>
+            <stop stop-color="#6DCF74" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="16.7073332%" x2="100%" y2="83.2926668%" id="linearGradient-4">
+            <stop stop-color="#0077FF" offset="0%"></stop>
+            <stop stop-color="#6DCF74" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UI---People-Profiler-Admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-+-Path-2-Copy-Mask">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#D5FCFF" style="mix-blend-mode: multiply;" opacity="0.883184524" xlink:href="#path-1"></use>
+            <rect id="Rectangle" fill="url(#linearGradient-3)" mask="url(#mask-2)" x="0" y="0" width="1440" height="900"></rect>
+            <path d="M725.296061,-207.515988 C700.775195,-259.049974 720.669589,-267.734522 784.979242,-233.569632 C881.443721,-182.322298 834.37258,-71.0221981 886.125798,-24 C937.879017,23.0221981 1064.74426,35.5 1064.74426,121 C1064.74426,206.5 998.713229,247.996096 1064.74426,263 C1130.77528,278.003904 1186.80428,247.996096 1242.90214,263 C1299,278.003904 1320.67408,382.449819 1423.38883,382.449819 C1526.10359,382.449819 1687.80253,461.740317 1580.18616,520.127896 C1508.44192,559.052949 1190.04653,564.830157 625,537.459521 L725.296061,-207.515988 Z" id="Path-2-Copy" fill="url(#linearGradient-4)" style="mix-blend-mode: overlay;" mask="url(#mask-2)" transform="translate(1120.350107, 150.204879) rotate(177.000000) translate(-1120.350107, -150.204879) "></path>
+        </g>
+    </g>
+</svg>

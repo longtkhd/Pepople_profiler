@@ -1,0 +1,11 @@
+/*
+ *
+ * CLIENT CREATE CONTACT constants
+ *
+ */
+
+
+export const INIT_CREATE_CONTACT_CLIENT = 'app/client_state/INIT_CREATE_CONTACT_CLIENT';
+export const CREATE_CONTACT_CLIENT_SUCCESS = 'app/client_state/CREATE_CONTACT_CLIENT_SUCCESS';
+export const CREATE_CONTACT_CLIENT_FAIL = 'app/client_state/CREATE_CONTACT_CLIENT_FAIL';
+export const CLEAN_CREATE_CONTACT_CLIENT = 'app/client_state/CLEAN_CREATE_CONTACT_CLIENT';

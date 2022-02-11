@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="397px" height="222px" viewBox="0 0 397 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9FB10BD3-5989-4D13-A170-E6F61DA6297C</title>
+    <defs>
+        <linearGradient x1="0%" y1="37.6017875%" x2="100%" y2="62.3982125%" id="linearGradient-1">
+            <stop stop-color="#0077FF" offset="0%"></stop>
+            <stop stop-color="#6DCF74" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="31.3121354%" x2="100%" y2="68.6878646%" id="linearGradient-2">
+            <stop stop-color="#0077FF" offset="0%"></stop>
+            <stop stop-color="#6DCF74" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="30.8596227%" x2="100%" y2="69.1403773%" id="linearGradient-3">
+            <stop stop-color="#0077FF" offset="0%"></stop>
+            <stop stop-color="#6DCF74" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UI---People-Profiler-Admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.5---Agency-Admin---Registation-Success" transform="translate(-515.000000, -359.000000)">
+            <g id="Group-3" transform="translate(515.268572, 359.265082)">
+                <path d="M180.744517,35.6947428 C222.225567,35.6947428 255.302196,16.7349183 297.48059,16.7349183 C352.859534,16.7349183 387.100864,44.7301023 395.348644,82.804772 C402.797918,117.193252 344.867657,140.82682 297.48059,150.734918 C250.093524,160.641238 297.665047,195.24758 284.203857,208.271157 C270.742667,221.294734 200.843772,211.948851 163.329103,178.968683 C125.814434,145.988516 65.3434707,199.595591 28.7055007,178.968683 C-7.93246923,158.341776 -15.2520624,75.9729414 41.0527532,46.3539299 C97.3575687,16.7349183 124.746047,35.6947428 180.744517,35.6947428 Z" id="Fill-1" fill="url(#linearGradient-1)" opacity="0.795503162" style="mix-blend-mode: multiply;"></path>
+                <path d="M239.560447,7.78894432 C312.701096,17.346806 382.878205,51.4331052 376.441796,72.301955 C370.003421,93.1691011 347.933206,98.5341112 351.610592,113.439946 C355.289944,128.34578 392.439408,154.577936 382.878205,170.080072 C373.318968,185.582209 306.549832,180.902093 262.407436,195.119626 C218.26504,209.338861 178.354621,226.912818 151.684724,217.375401 C119.77996,205.963893 131.534176,167.062944 88.310143,155.734918 C45.0880763,144.406893 6.92242424,102.890366 32.9261561,45.8126422 C58.929888,-11.2650817 156.500689,-3.06544725 239.560447,7.78894432 Z" id="Fill-3" fill="url(#linearGradient-2)" opacity="0.414504278" style="mix-blend-mode: multiply;"></path>
+                <path d="M313.009422,189.316762 C329.186022,202.831916 358.308222,174.21107 320.288622,171.824378 C307.146822,170.999916 296.829222,175.799839 313.009422,189.316762 Z" id="Fill-6" fill="url(#linearGradient-3)" style="mix-blend-mode: multiply;"></path>
+            </g>
+        </g>
+    </g>
+</svg>

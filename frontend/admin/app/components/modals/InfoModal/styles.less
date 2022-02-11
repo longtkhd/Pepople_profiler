@@ -1,0 +1,41 @@
+@import 'styles/variables';
+
+.info-modal {
+  &.ant-modal-confirm  {
+    width: 600px !important;
+  }
+
+  .ant-modal-content {
+    border-radius: 10px;
+  }
+
+  .ant-modal-confirm-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .ant-modal-confirm-title {
+      font-size: @font-size-super;
+      font-weight: bold;
+      margin: 40px 0px;
+      display: flex;
+    }
+
+    .ant-modal-confirm-content {
+      margin-bottom: 24px;
+    }
+  }
+
+  .ant-modal-confirm-btns {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin: 24px 0px;
+
+    .ant-btn {
+      width: 180px;
+    }
+  }
+}

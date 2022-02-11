@@ -1,0 +1,22 @@
+version: "2"
+services:
+  people-profile-redis:
+    container_name: people-profile-redis
+    image: redis:latest
+    ports:
+      - "6379:6379" #specify ports forewarding
+    restart: unless-stopped
+  people-profile-backend: #name of the second service
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" #specify ports forewarding
+    container_name: people-profile-backend
+    restart: always
+    depends_on:
+        - people-profile-redis
+    env_file:
+      - .env.prod
+    volumes:
+      - ./export-pdf:/export-pdf
