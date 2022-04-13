@@ -168,8 +168,8 @@ function SignupForm(props) {
                   }
                 >
                   {countries.map(option => (
-                    <Option key={option.id} value={option.code}>
-                      {option.name}
+                    <Option key={option.id} value={option.Code}>
+                      {option.Name}
                     </Option>
                   ))}
                 </Select>

@@ -1,6 +1,7 @@
 const config = {
     mongodb: {
         // TODO Change (or review) the url to your MongoDB:
+        // url: 'mongodb://bhsoft:131HKnzMBnCRE8GQQW5a68P1bir3J7idKbq6wuimtzXY@52.64.18.209:27017/people-profile',
         url: 'mongodb://bhsoft:131HKnzMBnCRE8GQQW5a68P1bir3J7idKbq6wuimtzXY@52.64.18.209:27017/people-profile',
 
         // TODO Change this to your database name:

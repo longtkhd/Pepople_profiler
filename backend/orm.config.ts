@@ -9,7 +9,7 @@ if (currentEnv == 'development') {
 }
 export const connectionString = {
     // uri: `mongodb://${process.env.DB_USER}:${encodeURIComponent(process.env.DB_PASS)}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
-    uri: `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
+    uri:`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}/${process.env.DB_NAME}`,
     options: {
         useNewUrlParser: true,
         useUnifiedTopology: true,

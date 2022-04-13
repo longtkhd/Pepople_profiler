@@ -24,6 +24,7 @@
         "migrate": "mocha --timeout 10000 test/migrations/up-test.js"
     },
     "dependencies": {
+        "@nestjs-modules/mailer": "^1.6.1",
         "@nestjs/common": "^7.6.1",
         "@nestjs/config": "^0.5.0",
         "@nestjs/core": "^7.6.1",

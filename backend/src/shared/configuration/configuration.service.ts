@@ -25,7 +25,7 @@ export class ConfigurationService {
         return process.env.asset_url
     }
     get port(): string | number {
-        return process.env.PORT || 3000
+        return process.env.PORT || 5000
     }
     get domain(): string {
         return process.env.domain
