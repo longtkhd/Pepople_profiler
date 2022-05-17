@@ -293,7 +293,7 @@ export class CandidateJobListDto {
     @IsArray()
     @ValidateNested({ each: true })
     @ApiProperty({ type: [CandidateJobInfo] })
-    candidate_list: CandidateJobInfo[];
+    candidate_list: any;
 }
 
 export class OutCandidateJobAssessmentInvite {

@@ -22,7 +22,7 @@ export class ClientJobDashboardDetail {
     @ApiProperty()
     @Type(() => CandidateJobFeedbackStatus)
     @IsOptional()
-    candidate_list: CandidateJobFeedbackStatus[]
+    candidate_list: any
 
     @ApiProperty()
     @Type(() => CompanyInfoDto)
